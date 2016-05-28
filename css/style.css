@@ -147,9 +147,54 @@ footer.page-footer {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: white;
+  color: rgba(200,200,200,50);
+  font-weight: 300;
+  text-shadow: none;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s; 
+}
+
+.navbar-inverse .navbar-nav > li > a::before, .navbar-inverse .navbar-nav > li > a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,255);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px); 
+}
+
+.navbar-inverse .navbar-nav > li > a::before {
+    top: 0;
+   -webkit-transform: translateY(-5px);
+   -moz-transform: translateY(-5px);
+   transform: translateY(-5px); 
+}
+
+.navbar-inverse .navbar-nav > li > a::after {
+    bottom: 0;
+   -webkit-transform: translateY(5px);
+   -moz-transform: translateY(5px);
+   transform: translateY(5px); 
+}
+
+.navbar-inverse .navbar-nav > li > a:hover::before,
+.navbar-inverse .navbar-nav > li > a:focus::before,
+.navbar-inverse .navbar-nav > li > a:hover::after,
+.navbar-inverse .navbar-nav > li > a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #22F;
+  color: rgba(255,255,255,255);
 }

@@ -25,7 +25,7 @@
 
  <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container anim">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -37,7 +37,8 @@
         <div class="navbar-collapse collapse">
           
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#home"><img src="img/logo.png" alt=" "></a></li>
+            <li><a href="#home" style="padding: 0px"><img src="img/logo.png" alt=" "></a></li>
+            <li><a href="" style="padding-left: 4px ; padding-right: 0px ; visibility: hidden"></a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -48,10 +49,13 @@
     
     <A NAME="home">
 
-    <section class="full-bg-img">
-        <div class="container"></div>
+    <section class="full-bg-img" style="height:100vh; width:100vw">
+    <div id="anim-header" class="anim-header">
+        <canvas id="anim">
+            <div class="container"></div>
+        </canvas>
+    </div>
     </section>
-
     <!-- SCRIPTS -->
     
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
