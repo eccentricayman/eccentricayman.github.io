@@ -23,6 +23,10 @@
 
     <!-- Material Design Bootstrap -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -54,12 +58,20 @@
 
     <section class="full-bg-img" style="height:100vh; width:100vw">
     <div id="anim-header" class="anim-header">
-        <canvas id="anim">
-            <div class="container"></div>
-        </canvas>
+        <canvas id="anim"></canvas>
+        <div class="wrapper">
+        <h1 class="main-title text_h center header cd-headline letters type" style="padding: 10px; padding-bottom: 30px">
+            <span>You could call me a </span> 
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible"> </b>
+                <b>developer</b>
+                <b>programmer</b>
+                <b>coder</b>
+            </span>
+        </h1>
+        </div>
     </div>
     </section>
-    <!-- SCRIPTS -->
     
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
@@ -77,5 +89,7 @@
     <script type="text/javascript" src="js/navbar.js"></script>
     <script src="js/rAF.js"></script>
 
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
 </body>
 </html>
