@@ -56,13 +56,13 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    
-    <A NAME="home">
 
+     <A NAME="home">
+    
     <section class="full-bg-img" style="height:100vh; width:100vw">
     <div id="anim-header" class="anim-header">
         <canvas id="anim"></canvas>
-        <div class="wrapper">
+        <div class="">
         <h1 class="main-title center header cd-headline letters type" style="padding: 10px; padding-bottom: 30px">
             <span>You could call me a </span> 
             <span class="cd-words-wrapper waiting">
@@ -76,13 +76,39 @@
     </div>
     </section>
     
-    <div class="wrapper" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 50vw ; cursor: default;">
-        <img class="circle circle-me responsive-img z-depth-5" id="me" src="img/me.jpg" style="zoom: 55%">
+    <div class="" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 50vw ; cursor: default">
+        Ayylmao
     </div> 
+
+    <div class="wrapper imageanim" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 50vw ; cursor: default">
+        <img class="circle circle-me responsive-img" id="me" src="img/me.jpg" style="zoom: 50%">
+    </div> 
+
+
+    <A NAME="about">
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <!-- Image reveal -->
+    <script>
+        window.sr = ScrollReveal({reset : true});
+        sr.reveal('.imageanim');
+    </script>
+    <!-- Smooth scroll -->
+    <script>
+        var $root = $('html, body');
+        $('a').click(function() {
+           var href = $.attr(this, 'href');
+           $root.animate({
+               scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+            }, 1000, function () {
+               window.location.hash = href;
+           });
+            return false;
+        });
+    </script>
 
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -98,5 +124,6 @@
 
     <script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
+
 </body>
 </html>
