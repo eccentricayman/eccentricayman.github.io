@@ -77,7 +77,7 @@
     <div id="anim-header" class="anim-header">
         <canvas id="anim"></canvas>
         <div class="">
-        <h1 id="nametext" class="main-title center header cd-headline letters type" style="padding: 10px; padding-bottom: 30px">
+        <h1 class="main-title center header cd-headline letters type" style="padding: 10px; padding-bottom: 30px">
             <span>You could call me </span> 
             <span class="cd-words-wrapper waiting">
                 <b class="is-visible">a student</b>
@@ -95,11 +95,7 @@
         <h2 id="nametext" class="surinami">AYMAN AHMED</h2>
     </div> 
     <div class="wrapper imageanim" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 50vw ; cursor: default">
-<<<<<<< HEAD
-        <img class="circle circle-me responsive-img" id="me" src="img/me.jpg" style="zoom: 40%; padding-top: 10vh">
-=======
-        <img class="circle circle-me responsive-img z-depth-5" id="me" src="img/me.jpg" style="zoom: 50%">
->>>>>>> c7c807855ea3928d2d23d3cbbf2bc10bf3f914f0
+        <img class="circle circle-me responsive-imgz" id="me" src="img/me.jpg" style="zoom: 40%; padding-top: 10vh">
     </div> 
 
 
@@ -107,7 +103,6 @@
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <!-- Image reveal -->
     <script>
@@ -116,28 +111,32 @@
     </script>
     <!-- some weird ass text underline stuf -->
     <script>
-        $(function() {
-            $(document).scroll(function() {
-                if($(this).scrollTop() >= $('.surinami').offset().top) {
-                    $(".surinami").addClass("surinami-hovah");
-                } 
-                else {
-                    $(".surinami").removeClass("surinami-hovah::before");
-                }
-            });
-        });
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            var objectSelect = $("#nametext");
+            var offset = objectSelect.offset(); 
+            if (objectSelect.length) {
+                var objectPosition = objectSelect.offset.top;
+            }
+            if (scroll >= objectPosition) {
+                objectSelect.addClass("surinami-hovah");
+            } 
+            else {
+                objectSelect.removeClass("surinami-hovah");
+            }
+        }); 
     </script>
     <!-- Smooth scroll -->
     <script>
-        $(function(){
-            $(document).scroll(function(){
-                if($(this).scrollTop() >= $('#nametext').offset().top) {
-                    $("#nametext").addClass("surinami-hovah");
-                } 
-                else {
-                    $("#nametext").removeClass("surinami-hovah");
-                }
+        var $root = $('html, body');
+            $('a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+            }, 1000, function () {
+                window.location.hash = href;
             });
+            return false;
         });
     </script>
 
