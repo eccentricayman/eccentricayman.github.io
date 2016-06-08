@@ -488,7 +488,8 @@ bottom: 0;
   transform-origin: 0 50%;
 }
 
-.surinami-hovah {
+.surinami-hovah::before,
+.surinami-hovah::after {
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
 }
