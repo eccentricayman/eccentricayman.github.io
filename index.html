@@ -91,10 +91,11 @@
     </section>
     
     <div style="display:table-cell; text-align:center ; height: 100vh ; width: 60vw ; cursor: default">
-    <div style="padding-bottom: 50px"></div>
-        <h2 id="nametext" class="surinami">AYMAN AHMED</h2>
+    <div id="nametext" style="padding-bottom: 50px"></div>
+        <h2 id="nametext2" class="surinami">AYMAN AHMED</h2>
     </div> 
     <div class="wrapper imageanim" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 50vw ; cursor: default">
+
         <img class="circle circle-me responsive-imgz" id="me" src="img/me.jpg" style="zoom: 40%; padding-top: 10vh">
     </div> 
 
@@ -106,7 +107,7 @@
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <!-- Image reveal -->
     <script>
-        window.sr = ScrollReveal({reset : true});
+        window.sr = ScrollReveal({reset : false});
         sr.reveal('.imageanim');
     </script>
     <!-- some weird ass text underline stuf -->
@@ -114,15 +115,13 @@
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
             var objectSelect = $("#nametext");
-            var offset = objectSelect.offset(); 
+            var toAdd = $("#nametext2");
+            //var offset = objectSelect.offset();
             if (objectSelect.length) {
-                var objectPosition = objectSelect.offset.top;
+                var objectPosition = objectSelect.offset().top - window.innerHeight;
             }
             if (scroll >= objectPosition) {
-                objectSelect.addClass("surinami-hovah");
-            } 
-            else {
-                objectSelect.removeClass("surinami-hovah");
+                toAdd.addClass("surinami-hovah");
             }
         }); 
     </script>
