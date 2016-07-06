@@ -401,33 +401,6 @@ footer.page-footer {
     background-color: #A49480;
 }
 
-div.circle-me{
-/* make it responsive */
-max-width: 100%;
-width:100%;
-height:auto;
-display:block;
-/* div height to be the same as width*/
-padding-top:100%;
-
-/* make it a cirkle */
-border-radius:50%;
-
-/* Centering on image`s center*/
-background-position-y: center;
-background-position-x: center;
-background-repeat: no-repeat;
-
-/* it makes the clue thing, takes smaller dimention to fill div */
-background-size: cover;
-
-/* it is optional, for making this div centered in parent*/
-margin: 0 auto;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-}
 
 /*Text stuf*/
 .surinami {
@@ -440,7 +413,7 @@ bottom: 0;
   font-size: 60px;
   padding: 3px;
   padding-bottom: 13px;
-  color: #3A4945;
+  color: #000000;
 }
 
 .surinami::before,
@@ -449,12 +422,12 @@ bottom: 0;
   width: 100%;
   height: 3px;
   z-index: -1;
-  background: #3A4945;
+  background: #000000;
   position: absolute;
   -webkit-transform: scale3d(0,1,1);
   transform: scale3d(0,1,1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
 }
 
 .surinami::before {
@@ -476,3 +449,33 @@ bottom: 0;
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
 }
+
+.mlist {
+  font-size: 50px;
+  font-family: "Noto Sans";
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.mlistul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.mlistli {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.mlistli:before {
+  content: "›";
+  padding-right: 25px;
+}
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/

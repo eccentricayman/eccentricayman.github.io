@@ -40,7 +40,7 @@
     </script>
 
     <!-- Dem goog fontz -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans|Montserrat|Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-     <A NAME="home">
+    <A NAME="home"></A>
     
     <section class="full-bg-img" style="height:100vh; width:100vw ; max-width: 100% ; overflow:hidden">
     <div id="anim-header" class="anim-header">
@@ -90,18 +90,30 @@
     </div>
     </section>
     
-    <div style="display:table-cell; text-align:center ; height: 100vh ; width: 60vw ; cursor: default">
+    <A NAME="about"></A>
+    
+    <div style="display:table-cell; text-align:center ; height: 10vh ; width: 60vw ; cursor: default">
     <div id="nametext" style="padding-bottom: 50px"></div>
         <h2 id="nametext2" class="surinami">AYMAN AHMED</h2>
+    <div style="height: 5vh"></div>
+    <div style="display:table-cell ; text-align: left ; height: 80vh ; width: 60vh ; cursor: default ; padding-left: 50px ; padding-top: 30px ; padding-bottom: 30px">
+        <ul class="mlistul">
+            <li class="mlistli mlist">Stuyvesant High School</li>
+            <li class="mlistli mlist">High School Senior</li>
+            <li class="mlistli mlist">Hardware Enthusiast</li>
+            <li class="mlistli mlist">Designer</li>
+            <li class="mlistli mlist">Full Stack Developer</li>
+        </ul>
+    </div>
     </div> 
-    <div class="wrapper imageanim" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 50vw ; cursor: default">
-
-        <img class="circle circle-me responsive-imgz" id="me" src="img/me.jpg" style="zoom: 40%; padding-top: 10vh">
+    
+    <div class="wrapper imageanim" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 100vw ; cursor: default">
+        <img class="circle circle-me responsive-img z-depth-2" id="me" src="img/me.jpg" style="zoom: 40%">
     </div> 
-
-
-    <A NAME="about">
-
+    
+    <div class="parallax-container valign-wrapper">
+    <div class="parallax"><img src="img/rain.png" style="display: block; transform: translate3d(-50%, 303px, 0px);"></div>
+    </div>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
@@ -119,6 +131,7 @@
             //var offset = objectSelect.offset();
             if (objectSelect.length) {
                 var objectPosition = objectSelect.offset().top - window.innerHeight;
+                console.log(objectSelect.height);
             }
             if (scroll >= objectPosition) {
                 toAdd.addClass("surinami-hovah");
@@ -132,7 +145,7 @@
             var href = $.attr(this, 'href');
             $root.animate({
                 scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-            }, 1000, function () {
+            }, 500, function () {
                 window.location.hash = href;
             });
             return false;
