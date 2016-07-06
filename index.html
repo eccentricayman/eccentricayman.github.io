@@ -43,7 +43,7 @@
 	</script>
 
 	<!-- Dem goog fontz -->
-	<link href='https://fonts.googleapis.com/css?family=Bitter|Ek+Mukta|Noto+Sans|Montserrat|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Bitter|Ek+Mukta|Lato|Montserrat|Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -80,7 +80,7 @@
 	<div id="anim-header" class="anim-header">
 		<canvas id="anim"></canvas>
 		<div class="">
-		<h1 class="main-title center header cd-headline letters type" style="padding: 10px; padding-bottom: 30px ; font-family: 'Noto Sans', sans-serif">
+		<h1 class="main-title center header cd-headline letters type" style="padding: 10px; padding-bottom: 30px">
 			<span>You could call me </span> 
 			<span class="cd-words-wrapper waiting">
 				<b class="is-visible">a student</b>
@@ -96,8 +96,9 @@
 	<A NAME="about"></A>
 	
 	<div style="display:table-cell; text-align:center ; height: 10vh ; width: 60vw ; cursor: default">
-	<div id="nametext" style="padding-bottom: 50px"></div>
+	<div id="nametext" style="padding-bottom: 50px">
 		<h2 id="nametext2" class="surinami">AYMAN AHMED</h2>
+	</div>
 	<div style="display:table-cell ; text-align: left ; height: 70vh ; width: 60vh ; cursor: default ; padding-left: 50px">
 		<ul class="mlistul">
 			<li class="mlistli mlist" style="padding-left: 75px">Stuyvesant High School</li>
@@ -150,7 +151,70 @@
 	<div class="parallax-container valign-wrapper">
 	<div class="parallax"><img src="img/projects.png" style="display: block; transform: translate3d(-50%, 303px, 0px);"></div>
 	</div>
+
+	<A NAME="projects"></A>
 	
+	<!-- <div style="height: 15vh ; width: 100vh ; text-align: center"> -->
+	<div id="nametext3" style="padding-bottom: 75px ; padding-top: 40px; width: 98vw ; height: 10vh ; text-align: center ; margin: 0px">
+		<h2 id="nametext4" class="surinami" style="font-family: 'Bitter'">Projects</h2>
+		</div>
+	<ul class="grid cs-style-3" style="overflow: hidden">
+		<li>
+			<figure>
+				<img src="img/temp.png">
+				<figcaption>
+					<h3>WIP</h3>
+					<span>Projects coming soon.</span>
+					<a href="#"> </a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="img/temp.png">
+				<figcaption>
+					<h3>WIP</h3>
+					<span>Projects coming soon.</span>
+					<a href="#"> </a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="img/temp.png">
+				<figcaption>
+					<h3>WIP</h3>
+					<span>Projects coming soon.</span>
+					<a href="#"> </a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="img/temp.png">
+				<figcaption>
+					<h3>WIP</h3>
+					<span>Projects coming soon.</span>
+					<a href="#"> </a>
+				</figcaption>
+			</figure>
+		</li>
+
+	</ul>
+
+	<A NAME="contact"></A>
+
+	<div class="bottombar" style="margin: 0px ; padding: 0px ; width: 100% ; height: 40vh ; overflow: hidden ; display: block">
+		<div style="height:100px;float:left;background-color:red">
+				<button data-toggle="collapse" data-target="#email">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</button>	
+			</div>
+			  <div id="email" class="collapse width" style="height: 25px">
+			        aahmed3@stuy.edu
+		      </div>
+	</div>	
+
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
@@ -169,7 +233,21 @@
 			//var offset = objectSelect.offset();
 			if (objectSelect.length) {
 				var objectPosition = objectSelect.offset().top - window.innerHeight;
-				console.log(objectSelect.height);
+			}
+			if (scroll >= objectPosition) {
+				toAdd.addClass("surinami-hovah");
+			}
+		}); 
+	</script>
+	<!-- pt. 2 -->
+	<script>
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+			var objectSelect = $("#nametext3");
+			var toAdd = $("#nametext4");
+			//var offset = objectSelect.offset();
+			if (objectSelect.length) {
+				var objectPosition = objectSelect.offset().top - window.innerHeight;
 			}
 			if (scroll >= objectPosition) {
 				toAdd.addClass("surinami-hovah");
