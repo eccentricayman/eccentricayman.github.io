@@ -410,7 +410,7 @@ footer.page-footer {
   position: relative;
   line-height: 1;
   display: inline-block;
-  font-size: 60px;
+  font-size: 50px;
   padding: 3px;
   padding-bottom: 13px;
   color: #000000;
@@ -451,11 +451,11 @@ footer.page-footer {
 }
 
 .mlist {
-  font-size: 50px;
+  font-size: 28px;
   font-family: "Noto Sans";
   color: black;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .mlistul {
