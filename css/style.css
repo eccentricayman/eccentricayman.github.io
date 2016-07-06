@@ -473,6 +473,17 @@ footer.page-footer {
   content: "›";
   padding-right: 25px;
 }
+
+.trows {
+  display: flex;
+}
+
+.tcols {
+  flex: 1;
+  padding: 10em;
+  border: 1px white;
+}
+
 /*
 * {
   background: #000 !important;
