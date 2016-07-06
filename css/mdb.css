@@ -3209,9 +3209,9 @@ footer.page-footer .pad-top {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    width: 37px;
-    height: 37px;
-    line-height: 37px;
+    width: 400px;
+    height: 400px;
+    line-height: 4--px;
     padding: 0;
     background-color: #aa66cc;
     border-radius: 50%;
@@ -3226,8 +3226,8 @@ footer.page-footer .pad-top {
     display: inline-block;
     text-align: center;
     color: #fff;
-    font-size: 1.6rem;
-    line-height: 37px;
+    font-size: 17.3rem;
+    line-height: 400px;
 }
 
 .btn-floating:before {
