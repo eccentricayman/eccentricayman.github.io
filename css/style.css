@@ -1,3 +1,6 @@
+/* I apologize to whomever has the misfortune to go over
+this clusterfuck of mdb, bootstrap, and materialize*/
+
 html,
 body {
 	width: 100%;
@@ -540,7 +543,7 @@ footer.page-footer {
 	padding: 5px 10px;
 	border-radius: 2px;
 	display: inline-block;
-	background: #ed4e6f;
+	background: #26a69a;
 	color: #fff;
 }
 
@@ -592,6 +595,8 @@ footer.page-footer {
 
 .bottombar {
 	background: rgb(46,56,66);
+	text-align: center;
+	display: block;
 }
 
 .collapse.width {
@@ -601,7 +606,18 @@ footer.page-footer {
     -moz-transition: width 0.35s ease;
     -o-transition: width 0.35s ease;
     transition: width 0.35s ease;
-    inherit: .fa;
+    
+}
+
+.btn-circle.btn-xl {
+  width: 85px;
+  height: 85px;
+  padding: 0px 0px;
+  padding-left: 1.5px;
+  font-size: 24px;
+  line-height: 2.5;
+  border-radius: 66px;
+  top: 7.5vh;
 }
 
 /* for debugging that stupid scroll stuff that appears
