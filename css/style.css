@@ -188,8 +188,8 @@ footer.page-footer {
 }
 
 .navbar-collapse {
-	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .text_h {
@@ -628,3 +628,4 @@ footer.page-footer {
 	outline: solid #f00 1px !important;
 }
 */
+
