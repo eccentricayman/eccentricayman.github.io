@@ -504,9 +504,9 @@ footer.page-footer {
 
 .grid li {
 	display: inline-block;
-	width: 440px;
+	width: 600px;
 	margin: 0;
-	padding: 20px;
+	padding: 40px;
 	text-align: left;
 	position: relative;
 }
@@ -560,7 +560,7 @@ footer.page-footer {
 }
 
 .cs-style-3 figcaption {
-	height: 100px;
+	height: 150px;
 	width: 100%;
 	top: auto;
 	bottom: 0;

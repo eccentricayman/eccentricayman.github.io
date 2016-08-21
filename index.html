@@ -90,7 +90,7 @@
 					<li class="mlistli mlist" style="padding-left: 75px">Hardware Enthusiast</li>
 					<li class="mlistli mlist" style="padding-left: 75px">Designer</li>
 					<li class="mlistli mlist" style="padding-left: 75px">Full Stack Developer</li>
-					<li class="mlistli mlist" style="padding-left: 75px">HI JOY</li>
+					<li class="mlistli mlist" style="padding-left: 75px"><a href="http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg">idek</a></li>
 				</ul>
 			</div>
 		</div>
@@ -135,7 +135,7 @@
 
 		<!-- I AM OUT OF FLAT DESIGN STOCK PHOTOS RELATED TO CODE CURSE YOU EMPTY WALLET -->
 		<div class="parallax-container valign-wrapper">
-			<div class="parallax"><img src="img/temp2.png" style="display: block; transform: translate3d(-50%, 303px, 0px);"></div>
+			<div class="parallax"><img src="img/projectbackground.png" style="display: block; transform: translate3d(-50%, 303px, 0px);"></div>
 		</div>
 		
 		<A NAME="projects"></A>
@@ -143,27 +143,27 @@
 		<ul class="grid cs-style-3" style="overflow: hidden ; padding-top: 100px">
 			<li>
 				<figure>
-					<img src="img/temp2.jpg">
+					<img src="img/project1.png">
 					<figcaption>
-						<h3>WIP</h3>
-						<span>Projects coming soon.</span>
-						<a href="#"> </a>
+						<h3 class="projheader">Stuy SU</h3>
+						<span>My school's student union website.</span>
+						<a href="http://stuysu.org" target="_blank">View Now</a>
 					</figcaption>
 				</figure>
 			</li>
 			<li>
 				<figure>
-					<img src="img/temp2.jpg">
+					<img src="img/project2.png">
 					<figcaption>
-						<h3>WIP</h3>
-						<span>No really, I promise..</span>
-						<a href="#"> </a>
+						<h3>Sophomore Caucus</h3>
+						<span>Website for my school's sophomore caucus.</span>
+						<a href="http://sophomore.stuysu.org">View Now</a>
 					</figcaption>
 				</figure>
 			</li>
 			<li>
 				<figure>
-					<img src="img/temp2.jpg">
+					<img src="http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg">
 					<figcaption>
 						<h3>WIP</h3>
 						<span>:(</span>
@@ -173,7 +173,7 @@
 			</li>
 			<li>
 				<figure>
-					<img src="img/temp2.jpg">
+					<img src="http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg">
 					<figcaption>
 						<h3>WIP</h3>
 						<span>THIS WILL MOTIVATE ME TO ACTUALLY DO STUFF</span>
@@ -183,11 +183,12 @@
 			</li>
 		</ul>
 		<A NAME="contact"></A>
+		<p style="display: none" id="email">aahmed3@stuy.edu</p>
 		<div class="bottombar" style="margin: 0px ; padding: 0px ; width: 100% ; height: 30vh ; overflow: hidden">
-			<button type="button" class="btn btn-circle btn-xl" style="left: 30vh"><i class="fa fa-envelope" style="font-size: 36px ; line-height: 2.4"></i></button>
+			<button type="button" id="email-button" class="btn btn-circle btn-xl" style="left: 30vh"><i class="fa fa-envelope" style="font-size: 36px ; line-height: 2.4" onclick="copyToClipboard('#email')"></i></button>
 			<a class="btn btn-circle btn-xl" style="right: 30vh" href="https://github.com/eccentricayman"><i class="fa fa-github" style="font-size: 55px ; line-height: 1.6"></i></a>
 		</div>
-		<div class="bottombar" style="margin: 0px ; padding: 0px ; width: 100% ; height: 5vh ; overflow: hidden ; display: block; ; background: rgb(46,50,60) ; color: white ; padding-top: 0.5em">
+		<div class="bottombar" style="margin: 0px ; padding: 0px ; width: 100% ; height: 5vh ; overflow: hidden ; display: block; ; background: rgb(46,50,60) ; color: white ; padding-top: 1.5vh">
 			© 2016 Ayman Ahmed
 		</div>
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -226,6 +227,16 @@
 				});
 				return false;
 			});
+		</script>
+		<!-- finds and copies on buttom?? -->
+		<script>
+			function copyToClipboard(element) {
+				  var $temp = $("<input>");
+				  $("body").append($temp);
+				  $temp.val($(element).text()).select();
+				  document.execCommand("copy");
+				  $temp.remove();
+			}
 		</script>
 		<!-- JQuery -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
