@@ -454,7 +454,7 @@ footer.page-footer {
 
 .mlist {
 	font-size: 28px;
-	font-family: "Open Sans", "Noto Sans", sans-serif;
+	font-family: "Raleway", sans-serif;
 	color: black;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -595,11 +595,15 @@ footer.page-footer {
 .bottombar {
 	background: rgb(46,56,66);
 	text-align: center;
+	display: block;
+}
+
+.seperate {
 	display: table;
 	table-layout: fixed;
 }
 
-.bottombar span {
+.seperate span {
 	display: table-cell;
 	text-align: center;
 }
