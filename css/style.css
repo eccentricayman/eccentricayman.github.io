@@ -595,7 +595,13 @@ footer.page-footer {
 .bottombar {
 	background: rgb(46,56,66);
 	text-align: center;
-	display: block;
+	display: table;
+	table-layout: fixed;
+}
+
+.bottombar span {
+	display: table-cell;
+	text-align: center;
 }
 
 .collapse.width {
