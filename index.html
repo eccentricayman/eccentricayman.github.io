@@ -222,7 +222,7 @@
 				var href = $.attr(this, 'href');
 				$root.animate({
 					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-				}, 1000, function () {
+				}, 500, function () {
 					window.location.hash = href;
 				});
 				return false;
