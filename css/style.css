@@ -629,6 +629,21 @@ footer.page-footer {
   top: 7.5vh;
 }
 
+#copied {
+	text-align: center;
+	position: fixed;
+	top: 42%;
+	left: 35.5%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	padding-bottom: 0px;
+	display: none;
+}
+
+.notify-visible {
+	display: block !important;
+}
+
 /* for debugging that stupid scroll stuff that appears
    on the side a.k.a the bane of my existence */
 /* 
