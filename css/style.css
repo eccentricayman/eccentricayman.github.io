@@ -130,7 +130,7 @@ footer.page-footer {
 }
 @media (max-width: 767px) {
 	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-		background: rgba(255, 255, 255, 0.75);
+		background: #2e3842;
 	}
 }
 
