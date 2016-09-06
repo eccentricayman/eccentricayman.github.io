@@ -1,3 +1,3 @@
 # eccentricayman.github.io
 
-- Under construction, I'll put something here someday
+- I wanna be one of those fancy web developers with their own pretty personal sites :c
