@@ -608,6 +608,15 @@ footer.page-footer {
 	text-align: center;
 }
 
+.bottombar-description {
+	padding: 0px;
+	text-align: center;
+	vertical-align: bottom;
+	color: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+
 .collapse.width {
     height: auto;
     width:0;

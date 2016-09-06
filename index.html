@@ -206,15 +206,38 @@
 		<div id="copied"><p style="text-align: left ; font-family: 'Montserrat', sans-serif ; font-size: 36px ; color: #FFFFFF">Copied to clipboard.</p></div>
 
 		<!-- Buttons -->
+		<div class="bottombar seperate" style="margin: 0px ; padding: 0px ; width: 100% ; height: 5vh">
+			<span class="bottombar-description">
+				FACEBOOK
+			</span>
+			<span class="bottombar-description">
+				MEDIUM
+			</span>
+			<span class="bottombar-description">
+				 GITHUB
+			</span>
+			<span class="bottombar-description">
+				RESUMÉ
+			</span>
+			<span class="bottombar-description">
+				EMAIL
+			</span>
+		</div>
 		<div class="bottombar seperate" style="margin: 0px ; padding: 0px ; width: 100% ; height: 30vh">
 			<span>
-				<a class="btn btn-circle btn-xl" href="https://github.com/eccentricayman" target="_blank"><i class="fa fa-github" style="font-size: 55px ; line-height: 1.6"></i></a>
+				<a class="btn btn-circle btn-xl btn-hover" href="https://facebook.com/aymantrouble" target="_blank"><i class="fa fa-facebook" style="font-size: 40px ; line-height: 2.25" aria-hidden="false"></i></a>
 			</span>
 			<span>
-				<a class="btn btn-circle btn-xl" href="resume.pdf" target="_blank"><i class="material-icons left" style="font-size: 48px ; line-height: 1.8 ; padding-left: 21%">work</i></a>
+				<a class="btn btn-circle btn-xl btn-hover" href="https://medium.com/@eccentricayman" target="_blank"><i class="fa fa-medium" style="font-size: 40px ; line-height: 2.25" aria-hidden="false"></i></a>
 			</span>
 			<span>
-				<button type="button" id="email-button" class="btn btn-circle btn-xl"><i class="fa fa-envelope" style="font-size: 36px ; line-height: 2.4" onclick="copyToClipboard('#email') ; displayCopied()"></i></button>
+				<a class="btn btn-circle btn-xl btn-hover" href="https://github.com/eccentricayman" target="_blank"><i class="fa fa-github" style="font-size: 55px ; line-height: 1.6"></i></a>
+			</span>
+			<span>
+				<a class="btn btn-circle btn-xl btn-hover" href="resume.pdf" target="_blank"><i class="material-icons left" style="font-size: 48px ; line-height: 1.8 ; padding-left: 21%">work</i></a>
+			</span>
+			<span>
+				<button type="button" id="email-button" class="btn btn-circle btn-xl btn-hover"><i class="fa fa-envelope" style="font-size: 36px ; line-height: 2.4" onclick="copyToClipboard('#email') ; displayCopied()"></i></button>
 			</span>
 		</div>
 		<!-- Dat ill copyright -->
@@ -228,7 +251,7 @@
 		<script>
 			window.sr = ScrollReveal({reset : false});
 			sr.reveal('.imageanim');
-			sr.reveal('.skrvl', 50);
+			sr.reveal('.skrvl', 10);
 		</script>
 		<!-- some weird ass text underline stuf -->
 		<script>
