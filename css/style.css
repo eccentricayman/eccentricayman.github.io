@@ -640,12 +640,15 @@ footer.page-footer {
 
 #copied {
 	text-align: center;
+	margin: auto;
 	position: fixed;
-	top: 42%;
-	left: 35.5%;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: 400px;
+	height: 90px;
 	background-color: rgba(0, 0, 0, 0.6);
-	padding: 10px;
+	padding: 15px;
 	padding-bottom: 0px;
+	border-radius: 5px;
 	display: none;
 }
 
