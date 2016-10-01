@@ -95,19 +95,18 @@
 			<div id="nametext" style="padding-top: 5vh">
 				<h2 id="nametext2" class="surinami">AYMAN AHMED</h2>
 			</div>
-			<div style="display:table-cell ; text-align: left ; height: 70vh ; width: 60vh ; cursor: default ; padding-left: 50px">
+			<div style="display:table-cell ; text-align: left ; height: 60vh ; width: 100vh ; cursor: default ; padding-left: 50px">
 				<ul class="mlistul">
 					<li class="mlistli mlist" style="padding-left: 75px">Senior @ Stuyvesant High School</li>
 					<li class="mlistli mlist" style="padding-left: 75px">Hardware Enthusiast</li>
 					<li class="mlistli mlist" style="padding-left: 75px">Designer</li>
 					<li class="mlistli mlist" style="padding-left: 75px">Full Stack Developer</li>
-					<li class="mlistli mlist" style="padding-left: 75px"><a href="http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg">idek</a></li>
 				</ul>
 			</div>
 		</div>
 
-		<div class="wrapper imageanim" style="display:table-cell; vertical-align:middle; text-align:center ; height: 100vh ; width: 100vw ; cursor: default">
-			<img class="circle circle-me responsive-img z-depth-2" id="me" src="img/me.jpg" style="zoom: 40%">
+		<div class="wrapper imageanim" style="display:table-cell; vertical-align:middle; text-align:center ; height: 50vh ; width: 100vw ; cursor: default">
+			<img class="circle circle-me responsive-img z-depth-2" id="me" src="img/me.jpg" style="zoom: 50%">
 		</div>
 		<div class="parallax-container valign-wrapper">
 			<div class="parallax"><img src="img/skills.png" style="display: block; transform: translate3d(-50%, 303px, 0px);"></div>
@@ -252,6 +251,12 @@
 			window.sr = ScrollReveal({reset : false});
 			sr.reveal('.imageanim');
 			sr.reveal('.skrvl', 10);
+		</script>
+		<!-- link jump offset -->
+		<script>
+			window.addEventListener("hashchange", function () {
+    			window.scrollTo(window.scrollX, window.scrollY - 75);
+			});
 		</script>
 		<!-- some weird ass text underline stuf -->
 		<script>

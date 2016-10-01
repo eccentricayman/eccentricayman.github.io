@@ -406,14 +406,14 @@ footer.page-footer {
 
 /*Text stuf*/
 .surinami {
-	font-family: 'Montserrat', serif;
+	font-family: 'Raleway', serif;
 	outline: none;
 	text-decoration: none;
 	position: relative;
 	line-height: 1;
 	display: inline-block;
 	font-size: 50px;
-	padding: 3px;
+	padding: 20px;
 	/*padding-bottom: 13px;*/
 	color: #000000;
 }
