@@ -154,7 +154,7 @@
 		<A NAME="projects"></A>
 
 		<!-- Projects -->
-		<ul class="grid cs-style-3" style="overflow: hidden ; padding-top: 100px">
+		<ul class="grid cs-style-3" style="overflow: hidden">
 			<li>
 				<figure>
 					<img src="/img/project1.png"></img>
@@ -252,12 +252,6 @@
 			sr.reveal('.imageanim');
 			sr.reveal('.skrvl', 10);
 		</script>
-		<!-- link jump offset -->
-		<script>
-			window.addEventListener("hashchange", function () {
-    			window.scrollTo(window.scrollX, window.scrollY - 75);
-			});
-		</script>
 		<!-- some weird ass text underline stuf -->
 		<script>
 			$(window).scroll(function() {
@@ -279,7 +273,7 @@
 				$('a').click(function() {
 				var href = $.attr(this, 'href');
 				$root.animate({
-					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 75
 				}, 750, function () {
 					window.location.hash = href;
 				});
