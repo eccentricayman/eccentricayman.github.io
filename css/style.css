@@ -412,8 +412,8 @@ footer.page-footer {
 	position: relative;
 	line-height: 1;
 	display: inline-block;
-	font-size: 50px;
-	padding: 20px;
+	font-size: 45px;
+	padding: 10px;
 	/*padding-bottom: 13px;*/
 	color: #000000;
 }
@@ -453,8 +453,8 @@ footer.page-footer {
 }
 
 .mlist {
-	font-size: 28px;
-	font-family: "Raleway", sans-serif;
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
 	color: black;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -464,16 +464,6 @@ footer.page-footer {
 	list-style: none;
 	margin-left: 0;
 	padding-left: 0;
-}
-
-.mlistli {
-	padding-left: 1em;
-	text-indent: -1em;
-}
-
-.mlistli:before {
-	content: "›";
-	padding-right: 25px;
 }
 
 .trows {
@@ -654,6 +644,13 @@ footer.page-footer {
 
 .notify-visible {
 	display: block !important;
+}
+
+.introp {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	color: #000000;
+	
 }
 
 /* for debugging that stupid scroll stuff that appears

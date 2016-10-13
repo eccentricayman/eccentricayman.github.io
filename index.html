@@ -90,17 +90,17 @@
 		<A NAME="about"></A>
 
 		<!-- about ya boy -->
-		<div style="display:table-cell; text-align:center ; height: 10vh ; width: 60vw ; cursor: default">
-			<div id="nametext" style="padding-top: 5vh">
-				<h2 id="nametext2" class="surinami">AYMAN AHMED</h2>
+		<div style="display:table-cell ; height: 10vh ; width: 60vw ; cursor: default">
+			<div style="padding-top: 5vh ; padding-left: 2.5vw ; font-family: 'Raleway', sans-serif">
+				<span class="fa fa-2x fa-angle-right" style=" vertical-align: top ; font-size: 65px"></span>
+				<span style="font-size: 50px">Who am I?</span>
 			</div>
-			<div style="display:table-cell ; text-align: left ; height: 60vh ; width: 100vh ; cursor: default ; padding-left: 50px">
-				<ul class="mlistul">
-					<li class="mlistli mlist" style="padding-left: 75px">Senior @ Stuyvesant High School</li>
-					<li class="mlistli mlist" style="padding-left: 75px">Hardware Enthusiast</li>
-					<li class="mlistli mlist" style="padding-left: 75px">Designer</li>
-					<li class="mlistli mlist" style="padding-left: 75px">Full Stack Developer</li>
-				</ul>
+			<div style="display:table-cell ; text-align: left ; height: 60vh ; width: 100vh ; cursor: default ; padding-left: 50px ; padding-top: 25px">
+				<p style="introp">
+					My name is Ayman Ahmed, and I am currently a senior at Stuyvesant High School. My hobbies include coding, gaming, and reading.
+					I mostly play MOBAs and RPGs; my favorites games include Bastion, Skyrim, and League of Legends. I 
+					read any genre I can get my hands on, but I have a personal preference of epic fantasy. I code in both the front end and the back end, alongside my love/hate relationship with Lisp based languages. Emacs is my editor of choice.
+				</p>
 			</div>
 		</div>
 
@@ -150,8 +150,8 @@
 		<A NAME="projects"></A>
 
 		<!-- Projects -->
-		<div id="nametext3" style="padding-top: 5vh ; text-align: center">
-				<h2 id="nametext4" class="surinami">Projects</h2>
+		<div id="nametext-div" style="padding-top: 5vh ; text-align: center">
+				<h2 id="nametext" class="surinami">Projects</h2>
 		</div>
 		<ul class="grid cs-style-3" style="overflow: hidden">
 			<li>
@@ -239,8 +239,10 @@
 			</span>
 		</div>
 		<!-- Dat ill copyright -->
-		<div class="bottombar" style="margin: 0px ; padding: 0px ; width: 100% ; height: 5vh ; overflow: hidden ; display: block; ; background: rgb(46,50,60) ; color: white ; padding-top: 1vh ; font-family: 'Open Sans'">
-			© 2016 Ayman Ahmed
+		<div class="bottombar" style="margin: 0px ; padding: 0px ; width: 100% ; height: 7.5vh ; overflow: hidden ; display: block; ; background: rgb(46,50,60) ; color: white ; padding-top: 1vh ; font-family: 'Open Sans'">
+			Made with Bootstrap, Materialize, coffee, and <i class="fa fa-heart" aria-hidden="true"></i>
+			<br> 
+			<i class="fa fa-copyright" aria-hidden="true"></i> Ayman Ahmed 2016
 		</div>
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/materialize.js"></script>
@@ -255,22 +257,8 @@
 		<script>
 			$(window).scroll(function() {
 				var scroll = $(window).scrollTop();
-				var objectSelect = $("#nametext");
-				var toAdd = $("#nametext2");
-				//var offset = objectSelect.offset();
-				if (objectSelect.length) {
-					var objectPosition = objectSelect.offset().top - window.innerHeight;
-				}
-				if (scroll >= objectPosition) {
-					toAdd.addClass("surinami-hovah");
-				}
-			});
-		</script>
-		<script>
-			$(window).scroll(function() {
-				var scroll = $(window).scrollTop();
-				var objectSelect = $("#nametext3");
-				var toAdd = $("#nametext4");
+				var objectSelect = $("#nametext-div");
+				var toAdd = $("#nametext");
 				//var offset = objectSelect.offset();
 				if (objectSelect.length) {
 					var objectPosition = objectSelect.offset().top - window.innerHeight;
