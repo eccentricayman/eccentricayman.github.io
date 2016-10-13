@@ -127,7 +127,6 @@
 					<!-- half images half from devicons.fr cause some of these are not used often :( -->
 						<li class="mlist skrvl" style="padding-bottom: 50px">HTML5<i style="float: right ; font-size: 50px"class="devicon-html5-plain-wordmark colored"></i></li>
 						<li class="mlist skrvl" style="padding-bottom: 50px">CSS<i style="float: right ; font-size: 50px"class="devicon-css3-plain-wordmark colored"></i></li>
-						<li class="mlist skrvl" style="padding-bottom: 50px">Elisp<img class="logo" src="img/emacs.png" style="float: right"></li>
 						<li class="mlist skrvl" style="padding-bottom: 50px">Python<i style="float: right ; font-size: 50px"class="devicon-python-plain-wordmark colored"></i></li>
 						<li class="mlist skrvl" style="padding-bottom: 50px">Java<i style="float: right ; font-size: 50px"class="devicon-java-plain-wordmark colored"></i></li>
 					</ul>
@@ -136,13 +135,11 @@
 				<div class="tcols">
 					<ul>
 						<li class="mlist skrvl" style="padding-bottom: 50px ; text-align: right"><i style="float: left ; font-size: 50px" class="devicon-javascript-plain colored"></i>Javascript</li>
-						<li class="mlist skrvl" style="padding-bottom: 50px ; text-align: right"><img class="logo" src="img/lua.png" style="float: left">Lua</li>
-						<li class="mlist skrvl" style="padding-bottom: 50px ; text-align: right"><i style="float: left ; font-size: 50px" class="devicon-cplusplus-plain colored"></i>C++</li>
-						<li class="mlist skrvl" style="padding-bottom: 50px ; text-align: right"><img class="logo" src="img/scheme.png" style="float: left">Scheme</li>
+						<li class="mlist skrvl" style="padding-bottom: 50px ; text-align: right"><i style="float: left ; font-size: 50px" class="devicon-android-plain colored"></i>Android</li>
+						<li class="mlist skrvl" style="padding-bottom: 50px ; text-align: right"><i style="float: left ; font-size: 50px" class="devicon-apple-plain colored"></i>iOS</li>
 						<li class="mlist skrvl" style="padding-bottom: 50px ; text-align: right"><i style="float: left ; font-size: 50px" class="devicon-mysql-plain-wordmark colored"></i>SQL</li>
 					</ul>
 				</div>
-
 			</div>
 		</div>
 
@@ -153,6 +150,9 @@
 		<A NAME="projects"></A>
 
 		<!-- Projects -->
+		<div id="nametext3" style="padding-top: 5vh ; text-align: center">
+				<h2 id="nametext4" class="surinami">Projects</h2>
+		</div>
 		<ul class="grid cs-style-3" style="overflow: hidden">
 			<li>
 				<figure>
@@ -257,6 +257,20 @@
 				var scroll = $(window).scrollTop();
 				var objectSelect = $("#nametext");
 				var toAdd = $("#nametext2");
+				//var offset = objectSelect.offset();
+				if (objectSelect.length) {
+					var objectPosition = objectSelect.offset().top - window.innerHeight;
+				}
+				if (scroll >= objectPosition) {
+					toAdd.addClass("surinami-hovah");
+				}
+			});
+		</script>
+		<script>
+			$(window).scroll(function() {
+				var scroll = $(window).scrollTop();
+				var objectSelect = $("#nametext3");
+				var toAdd = $("#nametext4");
 				//var offset = objectSelect.offset();
 				if (objectSelect.length) {
 					var objectPosition = objectSelect.offset().top - window.innerHeight;
