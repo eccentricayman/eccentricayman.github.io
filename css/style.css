@@ -501,6 +501,10 @@ footer.page-footer {
 	position: relative;
 }
 
+.double-row {
+	width: 600px !important;
+}
+
 .grid figure {
 	margin: 0;
 	position: relative;
