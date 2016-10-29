@@ -8,12 +8,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>eccentricayman</title>
-		<!-- Material Design Icons -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- Favicon -->
 		<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Material Design Bootstrap -->
@@ -95,11 +91,10 @@
 				<span class="fa fa-2x fa-angle-right" style=" vertical-align: top ; font-size: 65px"></span>
 				<span style="font-size: 50px"> Who am I?</span>
 			</div>
-			<div style="display:table-cell ; text-align: left ; height: 60vh ; width: 100vh ; cursor: default ; padding-left: 50px ; padding-top: 25px">
+			<div style="display:table-cell ; text-align: left ; height: 50vh ; width: 100vh ; cursor: default ; padding-left: 50px ; padding-top: 25px">
 				<p>
 					My name is Ayman Ahmed, and I am currently a senior at Stuyvesant High School. My hobbies include coding, gaming, and reading.
-					I mostly play MOBAs and RPGs; my favorites games include Bastion, Skyrim, and League of Legends. I 
-					read any genre I can get my hands on, but I have a personal preference of epic fantasy. I code in both the front end and the back end, alongside my love/hate relationship with Lisp based languages. Emacs is my editor of choice.
+					I do both front-end and back-end work, and Emacs is my favorite text editor.
 				</p>
 			</div>
 		</div>
@@ -114,7 +109,7 @@
 		<A NAME="skills"></A>
 
 		<!-- Skills -->
-		<div style="width: 98vw ; height:100vh ; overflow:hidden">
+		<div style="width: 98vw ; height:90vh ; overflow:hidden">
 
 			<div class="trows seperate" style="height: 10vh ; width: 98vw ; padding-top: 5vh">
 					<span><div style="font-size: 30px ; font-family: 'Raleway', sans-serif">PROFICIENT</div></span>
@@ -183,7 +178,7 @@
 					<img src="/img/project3.png"></img>
 					<figcaption>
 						<h3>Millenium Falcon</h3>
-						<span>A rough 3D model in AutoCAD of the Millenium Falcon from Star Wars.</span>
+						<span>A 3D model in AutoCAD of the Millenium Falcon from Star Wars.</span>
 						<a href="https://github.com/eccentricayman/TD10-Projects/raw/master/fp.dwg" target="_blank">Download Now <i class="fa fa-download" aria-hidden="true"></i></a>
 					</figcaption>
 				</figure>
@@ -193,7 +188,7 @@
 					<img src="http://wwsome.com/wp-content/uploads/2014/01/wip.jpg"></img>
 					<figcaption>
 						<h3>List</h3>
-						<span>A really simple list app: no alarms, no color coding, no fancy gizmos.</span>
+						<span>A simple app for taking notes / making lists, and absolutely nothing else.</span>
 						<a href="#" target="_blank">Coming Soon! <i class="fa fa-github" aria-hidden="true"></i></a>
 					</figcaption>
 				</figure>
@@ -205,65 +200,35 @@
 
 		<!-- Footer -->
 		<p style="display: none" id="email">aahmed3@stuy.edu</p>
-		<div id="copied"><p style="text-align: left ; font-family: 'Montserrat', sans-serif ; font-size: 30px ; color: #FFFFFF">Copied to clipboard.</p></div>
+		<div id="copied"><p style="text-align: left ; font-family: 'Montserrat', sans-serif ; font-size: 35px ; color: #FFFFFF">Copied to clipboard.</p></div>
 
-		<!-- Buttons -->
-		<div class="bottombar seperate" style="margin: 0px ; padding: 0px ; width: 100% ; height: 5vh">
-			<span class="bottombar-description">
-				FACEBOOK
-			</span>
-			<span class="bottombar-description">
-				MEDIUM
-			</span>
-			<span class="bottombar-description">
-				 GITHUB
-			</span>
-			<span class="bottombar-description">
-				RESUMÉ
-			</span>
-			<span class="bottombar-description">
-				EMAIL
-			</span>
-		</div>
 		<div class="bottombar seperate" style="margin: 0px ; padding: 0px ; width: 100% ; height: 30vh">
-			<span>
-				<a class="btn btn-circle btn-xl btn-hover" href="https://facebook.com/aymantrouble" target="_blank"><i class="fa fa-facebook" style="font-size: 40px ; line-height: 2.25" aria-hidden="false"></i></a>
-			</span>
-			<span>
-				<a class="btn btn-circle btn-xl btn-hover" href="https://medium.com/@eccentricayman" target="_blank"><i class="fa fa-medium" style="font-size: 40px ; line-height: 2.25" aria-hidden="false"></i></a>
-			</span>
-			<span>
-				<a class="btn btn-circle btn-xl btn-hover" href="https://github.com/eccentricayman" target="_blank"><i class="fa fa-github" style="font-size: 55px ; line-height: 1.6"></i></a>
-			</span>
-			<span>
-				<a class="btn btn-circle btn-xl btn-hover" href="resume.pdf" target="_blank"><i class="material-icons left" style="font-size: 48px ; line-height: 1.8 ; padding-left: 21%">work</i></a>
-			</span>
-			<span>
-				<button type="button" id="email-button" class="btn btn-circle btn-xl btn-hover"><i class="fa fa-envelope" style="font-size: 36px ; line-height: 2.4" onclick="copyToClipboard('#email') ; displayCopied()"></i></button>
-			</span>
+			<div class="seperate" style="margin: 0 auto ; width: 50%">
+				<span>
+					<a class="btn btn-circle btn-xl btn-hover" href="https://facebook.com/aymantrouble" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="font-size: 44px ; line-height: 2 ; padding-right: 3px"></i></a>
+				</span>
+				<span>
+					<a class="btn btn-circle btn-xl btn-hover" href="https://github.com/eccentricayman" target="_blank"><i class="fa fa-github" style="font-size: 60px ; line-height: 1.45 ; padding-right: 0.5px"></i></a>
+				</span>
+				<span>
+					<button type="button" id="email-button" class="btn btn-circle btn-xl btn-hover"><i class="fa fa-envelope" style="font-size: 44px ; line-height: 1.9 ; padding-left: 2px" onclick="copyToClipboard('#email') ; displayCopied()"></i></button>
+				</span>
+			</div>
 		</div>
 		<!-- Dat ill copyright -->
 		<div class="bottombar" style="margin: 0px ; padding: 0px ; width: 100% ; height: 7.5vh ; overflow: hidden ; display: block; ; background: rgb(46,50,60) ; color: white ; padding-top: 1vh ; font-family: 'Open Sans'">
-			Made with Bootstrap, Materialize, coffee, and <i class="fa fa-heart" aria-hidden="true"></i>
+			Made with Bootstrap, coffee, and <i class="fa fa-heart" aria-hidden="true"></i>
 			<br> 
 			<i class="fa fa-copyright" aria-hidden="true"></i> Ayman Ahmed 2016
 		</div>
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="js/materialize.js"></script>
-		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
-		<!-- Image reveal -->
-		<script>
-			window.sr = ScrollReveal({reset : false});
-			sr.reveal('.imageanim');
-			sr.reveal('.skrvl', 10);
-		</script>
+
 		<!-- Smooth scroll -->
 		<script>
 			var $root = $('html, body');
 				$('a').click(function() {
 				var href = $.attr(this, 'href');
 				$root.animate({
-					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 75
+					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 100
 				}, 750, function () {
 					window.location.hash = href;
 				});
@@ -294,10 +259,10 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<!-- Material Design Bootstrap -->
 		<script type="text/javascript" src="js/mdb.js"></script>
+		<script src="min/plugin-min.js"></script>
+		<script src="min/custom-min.js"></script>
 		<!-- Navbar js stuf -->
 		<script type="text/javascript" src="js/navbar.js"></script>
 		<script src="js/rAF.js"></script>
-		<script src="min/plugin-min.js"></script>
-		<script src="min/custom-min.js"></script>
 	</body>
 </html>
