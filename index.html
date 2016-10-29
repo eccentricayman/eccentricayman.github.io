@@ -232,13 +232,14 @@
 			<i class="fa fa-copyright" aria-hidden="true"></i> Ayman Ahmed 2016
 		</div>
 
-		<!-- Smooth scroll -->
+		<!-- Smooth scroll, idek why i need the different version of jquery but w/e -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script>
 			var $root = $('html, body');
 				$('a').click(function() {
 				var href = $.attr(this, 'href');
 				$root.animate({
-					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 100
+					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 60
 				}, 750, function () {
 					window.location.hash = href;
 				});
