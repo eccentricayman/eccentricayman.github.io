@@ -2,21 +2,21 @@
 
     var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
 
-    //Running
-    header();
-    checkuserinput();
+    // Main
+    initHeader();
+    addListeners();
 
-    function header() {
+    function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
         target = {x: 0, y: height};
 
-        largeHeader = document.getElementById('large-header');
+        largeHeader = document.getElementById('anim-header');
         largeHeader.style.height = height+'px';
 
-        canvas = document.getElementById('demo-canvas');
-        canvas.width = width;
-        canvas.height = height;
+        canvas = document.getElementById('anim');
+        canvas.width = width - 5;
+        canvas.height = height - 5;
         ctx = canvas.getContext('2d');
 
         // create particles
@@ -29,12 +29,12 @@
     }
 
     // Event handling
-    function checkuserinput() {
-        window.addEventListener('scroll', scrollcheck);
+    function addListeners() {
+        window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
 
-    function scrollcheck() {
+    function scrollCheck() {
         if(document.body.scrollTop > height) animateHeader = false;
         else animateHeader = true;
     }
@@ -57,13 +57,14 @@
         requestAnimationFrame(animate);
     }
 
-    function circle() {
+    // Canvas manipulation
+    function Circle() {
         var _this = this;
 
+        // constructor
         (function() {
             _this.pos = {};
             init();
-            console.log(_this);
         })();
 
         function init() {
