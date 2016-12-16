@@ -650,6 +650,10 @@ footer.page-footer {
 	display: block !important;
 }
 
+.drop-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* for debugging that stupid scroll stuff that appears
    on the side a.k.a the bane of my existence */
 /* 
