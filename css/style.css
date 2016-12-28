@@ -339,46 +339,6 @@ footer.page-footer {
 	cursor: default;
 }
 
-.btn-circle {
-	width: 70px;
-	height: 70px;
-	margin-top: 15px;
-	padding: 7px 16px;
-	border: 2px solid #fff;
-	border-radius: 100%!important;
-	font-size: 40px;
-	color: #fff;
-	background: 0 0;
-	-webkit-transition: background .3s ease-in-out;
-	-moz-transition: background .3s ease-in-out;
-	transition: background .3s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-	outline: 0;
-	color: #fff;
-	background: rgba(255,255,255,.1);
-}
-
-.btn-circle i.animated {
-	-webkit-transition-property: -webkit-transform;
-	-webkit-transition-duration: 1s;
-	-moz-transition-property: -moz-transform;
-	-moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-	-webkit-animation-name: pulse;
-	-moz-animation-name: pulse;
-	-webkit-animation-duration: 1.5s;
-	-moz-animation-duration: 1.5s;
-	-webkit-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	-moz-animation-timing-function: linear;
-}
-
 .btn {
 	border-radius: 0;
 	text-transform: uppercase;
@@ -621,15 +581,55 @@ footer.page-footer {
     
 }
 
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
 .btn-circle.btn-xl {
-  width: 85px;
-  height: 85px;
-  padding: 0px 0px;
-  padding-left: 1.5px;
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
   font-size: 24px;
-  line-height: 2.5;
-  border-radius: 66px;
-  top: 7.5vh;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+	outline: 0;
+	color: #fff;
+	background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
 }
 
 #copied {
