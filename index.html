@@ -18,7 +18,6 @@
 		<!-- Material Design Bootstrap -->
 		<link href="css/style.css" rel="stylesheet">
 		<link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-		<link href="min/custom-min.css" type="text/css" rel="stylesheet">
 		<!-- Font Awesome -->
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<!-- Google Analytics -->
@@ -231,7 +230,7 @@
 
 		<!-- Footer -->
 		<p style="display: none" id="email">ayman11432@live.com</p>
-		<div id="copied"><p style="text-align: left ; font-family: 'Montserrat', sans-serif ; font-size: 35px ; color: #FFFFFF">Copied to clipboard.</p></div>
+		<div id="copied" style="text-align: center ; font-family: 'Montserrat', sans-serif ; font-size: 1.75em ; color: #FFFFFF">Copied to clipboard.</div>
 
 		<!-- <div class="bottombar seperate" style="margin: 0px ; padding: 0px ; width: 100% ; height: 30vh">
 			<div class="seperate row" style="margin: 0 auto">
@@ -272,9 +271,26 @@
 			<i class="fa fa-copyright" aria-hidden="true"></i> Ayman Ahmed 2016
 		</div>
 
+		<!-- SCRIPTS -->
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- Material Design Bootstrap -->
+		<script type="text/javascript" src="js/mdb.js"></script>
+		<script type="text/javascript" src="min/plugin-min.js"></script>
+		<script type="text/javascript" src="min/custom-min.js"></script>
+
+		<!-- hide the notif thing -->
+		<script type="text/javascript">
+			$(document).ready(function() { 
+				$("#copied").hide();
+			});
+		</script>
 		<!-- Smooth scroll, idek why i need the different version of jquery but w/e -->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		<script type="text/javascript">
 			var $root = $('html, body');
 				$('a').click(function() {
 				var href = $.attr(this, 'href');
@@ -287,7 +303,7 @@
 			});
 		</script>
 		<!-- finds and copies on button?? -->
-		<script>
+		<script type="text/javascript">
 			function copyToClipboard(element) {
 				  var $temp = $("<input>");
 				  $("body").append($temp);
@@ -297,22 +313,13 @@
 			}
 		</script>
 		<!-- displays a notification in center, removes after 3 seconds -->
-		<script>
+		<script type="text/javascript">
 			function displayCopied() {
-				var notificationBox = $("#copied");
-				notificationBox.addClass("notify-visible");
-				setTimeout(function() { notificationBox.removeClass("notify-visible");}, 2000);
+				$("#copied").slideDown();
+				setTimeout(function() {
+					$("#copied").slideUp();
+				}, 3000);
 			}
 		</script>
-		<!-- JQuery -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<!-- Bootstrap core JavaScript -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<!-- Material Design Bootstrap -->
-		<script type="text/javascript" src="js/mdb.js"></script>
-		<script src="min/plugin-min.js"></script>
-		<script src="min/custom-min.js"></script>
-		<!-- animation -->
-		<script type="text/javascript" src="js/animation.js"></script>
 	</body>
 </html>

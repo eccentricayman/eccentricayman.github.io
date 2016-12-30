@@ -617,17 +617,19 @@ b.is-hidden, b.is-visible, i.out, i.in {
 }
 
 #copied {
-	text-align: center;
-	margin: auto;
-	position: fixed;
-	top: 0; left: 0; bottom: 0; right: 0;
-	width: 400px;
-	height: 90px;
-	background-color: rgba(0, 0, 0, 0.6);
-	padding: 15px;
-	padding-bottom: 0px;
-	border-radius: 5px;
-	display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden; 
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+	background-color: rgb(46, 56, 66);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .notify-visible {
