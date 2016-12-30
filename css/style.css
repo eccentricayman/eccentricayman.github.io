@@ -618,7 +618,7 @@ b.is-hidden, b.is-visible, i.out, i.in {
 
 #copied {
     position: fixed;
-    z-index: 101;
+    z-index: 99999;
     top: 0;
     left: 0;
     right: 0;
