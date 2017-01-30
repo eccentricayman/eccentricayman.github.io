@@ -411,7 +411,8 @@ b.is-hidden, b.is-visible, i.out, i.in {
 @media screen and (max-width: 767px) {
 	.mlist-separator > hr {
 		border: 0.5px solid rgba(0, 0, 0, 0.5);
-		width: 32.5em;
+		width: 65vw;
+		overflow: hidden;
 	}
 	.mlist-row {
 		padding-bottom: 0 !important;
