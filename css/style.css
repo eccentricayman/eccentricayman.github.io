@@ -404,6 +404,21 @@ b.is-hidden, b.is-visible, i.out, i.in {
 	padding-bottom: 10px;
 }
 
+.mlist-separator > hr {
+	border: none;
+}
+
+@media screen and (max-width: 767px) {
+	.mlist-separator > hr {
+		border: 0.5px solid rgba(0, 0, 0, 0.5);
+		width: 32.5em;
+	}
+	.mlist-row {
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+	}
+}
+
 .mlistul {
 	list-style: none;
 	margin-left: 0;
