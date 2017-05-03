@@ -1,351 +1,544 @@
 <!DOCTYPE html>
 <html>
-<!--
-    GOOD LUCK FIGURING ANY OF THIS OUT
-	(ALSO 4 LENGTH TAB FOR LIFE)
--->
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-		<title>Ayman Ahmed</title>
-		<!-- Favicon -->
-		<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
-		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Material Design Bootstrap -->
-		<link href="css/mdb.css" rel="stylesheet">
-		<!-- Material Design Bootstrap -->
-		<link href="css/style.css" rel="stylesheet">
-		<link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-		<!-- Font Awesome -->
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<!-- Google Analytics -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-78413490-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<!-- Dem goog fontz -->
-		<link href='https://fonts.googleapis.com/css?family=Montserrat|Lato|Open+Sans|Raleway' rel='stylesheet' type='text/css'>
-		<!-- some nice iconz -->
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-	</head>
 
-	<body>
+    <head>
+        <title>Ayman Ahmed</title>
 
-		<!-- Fixed navbar -->
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container anim">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-left">
-						<div>
-							<li style="display: inline"><a href="#home" style="padding: 0px ; padding-top: 2px"><img src="img/logo.png" alt=" "></a></li>
-						</div>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#about">About</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-				<!--/.nav-collapse -->
-			</div>
-		</div>
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <!-- favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="images/favicon.png">
+        
+        <!-- skeleton css framework  -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+            media="none"
+            onload="if(media!='all')media='all'">
 
-		<A NAME="home">
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/font-awesome.min.css"
+            media="none"
+            onload="if(media!='all')media='all'">
 
-		<section class="full-bg-img" style="height:100%; width:100% ; overflow:hidden">
-			<div id="anim-header" class="anim-header">
-				<canvas id="anim"></canvas>
-				<div class="">
-					<h1 class="main-title center header cd-headline letters type" style="padding: 10px; padding-bottom: 30px">
-						<span>You could call me </span>
-						<span class="cd-words-wrapper waiting">
-						<b class="is-visible">a student</b>
-						<b>a developer</b>
-						<b>a programmer</b>
-						<b>a hacker</b>
-						<b>a designer</b>
-						</span>
-					</h1>
-				</div>
-			</div>
-		</section>
+        <!-- google fonts -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Raleway:300,400,700"
+            media="none"
+            onload="if(media!='all')media='all'">
 
-		<A NAME="about"></A>
+        <!-- custom styles -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/styles.css"
+            media="none"
+            onload="if(media!='all')media='all'">
+    </head>
 
-		<!-- about ya boy -->
-		<div class="row" ; style="width: 80%">
-			<div class="col-sm-6">
-				
-				<div style="padding-top: 12.5% ; font-family: 'Raleway', sans-serif">
-					<span class="fa fa-2x fa-angle-right" style=" vertical-align: top ; font-size: 5em"></span>
-					<span style="font-size: 3.75em"> Who am I?</span>
-				</div>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar" id="nav">
+            <div class="container">
+                <ul class="navbar-list">
+                    <li class="navbar-item navbar-image-item"><a class="navbar-link navbar-image" href="#home"><img class="navbar-image-link" src="images/logo.png" /></a></li>
+                    <!-- Reverse order bc I'm too lazy to fix the float -->
+                    <li class="navbar-item"><a class="navbar-link sliding-middle-out" href="#contact" style="margin-right: 0">Contact</a></li>
+                    <li class="navbar-item"><a class="navbar-link sliding-middle-out" href="#projects">Projects</a></li>
+                    <li class="navbar-item"><a class="navbar-link sliding-middle-out" href="#skills">Skills</a></li>
+                    <li class="navbar-item"><a class="navbar-link sliding-middle-out" href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
 
-				<div style="display:table-cell ; text-align: left ; height: auto ; cursor: default ; padding-top: 5%">
-					<p>
-						My name is Ayman Ahmed, and I'm currently a high school senior. I love anything CS - whether it be apps, websites, or hardware. (I'm also obsessed with Emacs.)
-					</p>
-				</div>
+        <div class="cover-image" id="home">
+            <div id="cover">
+                <h1 class="cover-heading">Ayman Ahmed</h1>
+                <p class="cover-desc">A design oriented developer</p>
+            </div>
+        </div>
+        <i class="fa fa-angle-down fa-4x arrow-down" aria-hidden="true"></i>
+        
+        <div class="section" id="about">
+            <div class="terminal-window">
+                <header>
+                    <div class="button red"></div>
+                    <div class="button yellow"></div>
+                    <div class="button green"></div>
+                </header>
+                <div class="terminal">
+                    <span>>>> </span>
+                    <span class="import">import</span>
+                    <span> about</span>
+                    
+                    <br><br>
 
-			</div>
+                    <span>>>> </span>
+                    <span class="function">print </span>
+                    <span> greeting</span>
+                    <br>
+                    <span>Hi, I'm Ayman - a software developer from New York.<br> Nice to meet you!</span>
+                    
+                    <br><br>
+                    
+                    <span>>>> </span>
+                    <span>education</span>
+                    <br>
+                    
+                    <span>{</span>
+                    <br>
+                    <span class="string">&emsp;&emsp;'School'</span><span>: </span>
+                    <span class="string">'Stuyvesant High School'</span><span>,</span>
+                    <br>
+                    <span class="string">&emsp;&emsp;'Focus'</span><span>: </span>
+                    <span class="string">'Computer Science'</span><span>,</span>
+                    <br>
+                    <span class="string">&emsp;&emsp;'Graduation'</span><span>: </span>
+                    <span class="string">'June 2017'</span>
+                    <br>
+                    <span>}</span>
 
-			<div class="wrapper imageanim col-sm-6" style="display:table-cell; vertical-align:middle; text-align:center ; height: auto ; padding-top: 5vh ; padding-bottom: 5vh ; cursor: default">
-				<img class="circle circle-me responsive-img z-depth-2" id="me" src="img/me.jpg" style="zoom: 50%">
-			</div>
-		</div>
+                    <br><br>
+                    
+                    <span>>>> </span>
+                    <span>interests</span>
+                    <br>
+                    
+                    <span>[</span>
+                    <span class="string">'coding'</span><span>, </span>
+                    <span class="string">'computer hardware'</span><span>, </span>
+                    <span class="string">'gaming'</span><span>, </span>
+                    <span class="string">'glowstringing'</span><span>, </span>
+                    <span class="string">'swimming'</span><span>, </span>
+                    <span class="string">'reading'</span>
+                    <span>]</span>
+                    
+                    <br>
+                </div>
+            </div>
+        </div>
 
-		<div class="parallax-container valign-wrapper">
-			<div class="parallax"><img src="img/skills.png" style="display: block; transform: translate3d(-50%, 303px, 0px);"></div>
-		</div>
+        <!-- <hr style="margin: 0 ; width: 75% ; margin-left: 12.5%">  -->
+        <div class="separator"></div>
 
-		<A NAME="skills"></A>
+        <div class="section" id="skills">
+            <div class="skill-container">
+                <h4 class="skill-section-heading even-row-skill-section-heading">Languages</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="two columns alpha skill">
+                            <h3>Python</h3>
+                            <img src="images/python.png" alt="python-logo" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>Java</h3>
+                            <img src="images/java.png" alt="java-logo" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>C</h3>
+                            <img src="images/c.png" alt="c-logo" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>HTML / CSS</h3>
+                            <img src="images/html+css.png" alt="html-and-css-logo" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>JavaScript</h3>
+                            <img src="images/javascript.png" alt="js-logo" />
+                        </div>
+                        <div class="two columns omega skill">
+                            <h3>Swift</h3>
+                            <img src="images/swift.png" alt="swift-logo" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                
+                <h4 class="skill-section-heading">Tools</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="one column">&nbsp;</div>
+                        <div class="two columns alpha skill">
+                            <h3>Git</h3>
+                        <img src="images/git.png" alt="git-logo" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>Terminal (Zsh)</h3>
+                            <img src="images/terminal.png" alt="terminal-logo" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>Android Studio</h3>
+                            <img src="images/android-studio.png" alt="android-studio-logo" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>Xcode</h3>
+                            <img src="images/xcode.png" alt="xcode-logo" />
+                        </div>
+                        <div class="two columns omega skill">
+                            <h3>AutoCAD</h3>
+                            <img src="images/autocad.png" alt="autocad-logo" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                
+                <h4 class="skill-section-heading even-row-skill-section-heading">Experience</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="three columns">&nbsp;</div>
+                        <div class="two columns alpha skill">
+                            <h3>Full Stack Web Dev.</h3>
+                            <img src="images/webdev.png" alt="web-development-logo" style="width: 65%" />
+                        </div>
+                        <div class="two columns skill">
+                            <h3>iOS/Android App Dev.</h3>
+                            <img src="images/appdev.png" alt="app-development-logo" style="width: 65%" />
+                        </div>
+                        <div class="two columns omega skill">
+                            <h3>Database Management</h3>
+                            <img src="images/database.png" alt="database-logo" style="width: 65%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- Skills -->
-		<div style="padding-top: 7.5vh ; padding-left: 13.5vw ; font-family: 'Raleway', sans-serif">
-				<span class="fa fa-2x fa-angle-right" style=" vertical-align: top ; font-size: 55px"></span>
-				<span style="font-size: 40px"> Skills</span>
-		</div>
-		<p style="padding-left: 13.5vw">
-			Here are some of the skills I have.
-		</p>
+        <div class="separator"></div>
 
-		<div style="height:auto ; padding: 2.5% ; margin: 0 auto ; width: 80% ; padding-top: 0">
-			<!-- <div class="row" style="text-align: center">
-				<div class="col-sm-5" style="font-size: 2vw; font-family: 'Raleway', sans-serif">I am proficient at:</div>
-				<div class="mlist col-sm-2"></div>
-				<div class="col-sm-5" style="font-size: 2vw ; font-family: 'Raleway', sans-serif">I am familiar with:</div>
-			</div> -->
-			<div class="row mlist-row" style="font-size: 2vw">
-				<div class="mlist skrvl col-sm-5">HTML5<i style="float: right ; font-size: 50px"class="devicon-html5-plain-wordmark colored"></i></div>
-				<div class="col-sm-2 mlist-separator"><hr></div>
-				<div class="mlist skrvl col-sm-5" style="text-align: right"><i style="float: left ; font-size: 50px" class="devicon-javascript-plain colored"></i>Javascript</div>
-				<div class="mlist-separator"><hr></div>
-			</div>
-			<div class="row mlist-row" style="font-size: 2vw">
-				<div class="mlist skrvl col-sm-5">CSS<i style="float: right ; font-size: 50px"class="devicon-css3-plain-wordmark colored"></i></div>
-				<div class="mlist-separator skrvl col-sm-2"><hr></div>
-				<div class="mlist skrvl col-sm-5" style="text-align: right"><i style="float: left ; font-size: 50px" class="devicon-android-plain colored"></i>Android (Java)</div>
-				<div class="mlist-separator"><hr></div>
-			</div>
-			<div class="row mlist-row" style="font-size: 2vw">
-				<div class="mlist skrvl col-sm-5">Python<i style="float: right ; font-size: 50px"class="devicon-python-plain-wordmark colored"></i></div>
-				<div class="mlist-separator skrvl col-sm-2"><hr></div>
-				<div class="mlist skrvl col-sm-5" style="text-align: right"><i style="float: left ; font-size: 50px" class="devicon-apple-plain colored"></i>iOS (Swift)</div>
-				<div class="mlist-separator"><hr></div>
-			</div>
-			<div class="row mlist-row" style="font-size: 2vw">
-				<div class="mlist skrvl col-sm-5">Java<i style="float: right ; font-size: 50px"class="devicon-java-plain-wordmark colored"></i></div>
-				<div class="mlist-separator skrvl col-sm-2"><hr></div>
-				<div class="mlist skrvl col-sm-5" style="text-align: right"><i style="float: left ; font-size: 50px" class="devicon-mysql-plain-wordmark colored"></i>mySQL</div>
-			</div>
-		</div>
+        <div class="section" id="projects">
 
-		<div class="parallax-container valign-wrapper">
-			<div class="parallax"><img src="img/projectbackground.png" style="display: block; transform: translate3d(-50%, 303px, 0px);"></div>
-		</div>
+            <div class="row">
+                <div class="six columns project">
+                    <div class="label">
+                        <h1>Stuyvesant Student Union</h1>
+                        <p>The official website of Stuyvesant High School's Student Union.</p>
+                        <a href="http://stuysu.org" class="button">Visit <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <img src="images/project1.png" id="project1" class="u-max-full-width" alt="stuyvesant-student-union" />
+                </div>
+                <div class="six columns project">
+                        <div class="label">
+                            <h1>The Daily Greez</h1>
+                            <p>A journalism site made for a mock election in an AP Gov. class.</p>
+                            <a href="https://thedailygreez.github.io" class="button">Visit <i class="fa fa-angle-right"></i></a>
+                        </div>                    
+                    <img src="images/project4.png" id="project4" class="u-max-full-width" alt="the-daily-greez" />
+                </div>
+            </div>
 
-		<A NAME="projects"></A>
+            <div class="row">
+                <div class="six columns project">
+                    <div class="label">
+                        <h1>Stuyvesant Freshman Caucus</h1>
+                        <p>The website for Stuyvesant High School's current Freshman Caucus.</p>
+                        <a href="http://freshman.stuysu.org" class="button">Visit <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <img src="images/project6.png" id="project6" class="u-max-full-width" alt="stuyvesant-freshman-caucus" />
+                </div>
+                <div class="six columns project">
+                    <div class="label">
+                        <h1>Stuyvesant Sophomore Caucus</h1>
+                        <p>The website for Stuyvesant High School's current Sophomore Caucus.</p>
+                        <a href="http://sophomore.stuysu.org" class="button">Visit <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <img src="images/project2.png" id="project2" class="u-max-full-width" alt="stuyvesant-sophomore-caucus" />
+                </div>
+            </div>
 
-		<!-- Projects -->
-		<div style="padding-top: 7.5vh ; padding-left: 13.5vw ; font-family: 'Raleway', sans-serif">
-				<span class="fa fa-2x fa-angle-right" style=" vertical-align: top ; font-size: 55px"></span>
-				<span style="font-size: 40px"> Stuff I've done</span>
-		</div>
-		<p style="padding-left: 13.5vw">
-			Here are some of the projects I've worked on.
-		</p>
-		<ul class="grid cs-style-3" style="overflow: hidden">
-			<li>
-				<figure class="z-depth-2">
-					<img src="img/project1.png"><img>
-					<figcaption>
-						<h3 class="projheader">Stuy SU</h3>
-						<span>Stuy's student union website.</span>
-						<a href="http://stuysu.org" target="_blank">View Now <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure class="z-depth-2">
-					<img src="img/project2.png"><img>
-					<figcaption>
-						<h3>Sophomore Caucus</h3>
-						<span>The website for Stuy's Sophomore Caucus for 2016-2017.</span>
-						<a href="http://sophomore.stuysu.org" target="_blank">View Now <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-			<li class="col-sm-6" style="width: 50%">
-				<figure class="z-depth-2">
-					<img src="img/project3.png"><img>
-					<figcaption>
-						<h3>Millenium Falcon</h3>
-						<span>A 3D model in AutoCAD of the Millenium Falcon from Star Wars.</span>
-						<a href="https://github.com/eccentricayman/TD10-Projects/raw/master/fp.dwg" target="_blank">Download Now <i class="fa fa-github" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-			<li class="col-sm-6" style="width: 50%">
-				<figure class="z-depth-2">
-					<img src="http://storage.googleapis.com/ix_choosemuse/uploads/2016/02/android-logo.png"><img>
-					<figcaption style="width: 100%">
-						<h3>List</h3>
-						<span >A simple app for taking notes / making lists.</span>
-						<a href="#" target="_blank">Coming Soon! <i class="fa fa-android" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure class="z-depth-2">
-					<img src="img/project5.png"><img>
-					<figcaption>
-						<h3>The Daily Greez</h3>
-						<span>An article site following a mock presidential election for my AP Gov class.</span>
-						<a href="http://thedailygreez.github.io" target="_blank">View Now <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure class="z-depth-2">
-					<img src="img/project6.png"><img>
-					<figcaption>
-						<h3>Freshman Caucus</h3>
-						<span>The website for Stuy's Freshman Caucus for 2016-2017.</span>
-						<a href="http://freshman.stuysu.org" target="_blank">View Now <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure class="z-depth-2">
-					<img src="img/project7.png"></img>
-					<figcaption>
-						<h3>Concert.io</h3>
-						<span>Attending a concert? Find out information about that concert, including popular songs of the artists playing there!</span>
-						<a href="https://github.com/eccentricayman/schweak" target="_blank">View on Github <i class="fa fa-github" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure class="z-depth-2">
-					<img src="img/project8.png"></img>
-					<figcaption>
-						<h3>Concert.io</h3>
-						<span>A web app to help people find their pets / get lost pets back to their owners.</span>
-						<a href="https://github.com/pchan37/ubiquitous-happiness" target="_blank">View on Github <i class="fa fa-github" aria-hidden="true"></i></a>
-					</figcaption>
-				</figure>
-			</li>
-		</ul>
+            <div class="row">
+                <div class="six columns project">
+                    <div class="label">
+                        <h1>Concert.io</h1>
+                        <p>A web app to help you get introduced to the artists performing at your concerts.</p>
+                        <a href="https://github.com/eccentricayman/schweak" class="button">View on Github <i class="fa fa-github"></i></a>
+                    </div>
+                    <img src="images/project7.png" id="project7" class="u-max-full-width" alt="concert-io" />
+                </div>
+                <div class="six columns project">
+                    <div class="label">
+                        <h1>Lost & Found</h1>
+                        <p>A web app to help streamline the process of getting lost pets back to their owner.</p>
+                        <a href="https://github.com/pchan37/ubiquitous-happiness" class="button">View on Github <i class="fa fa-github"></i></a>
+                    </div>
+                    <img src="images/project8.png" id="project8" class="u-max-full-width" alt="lost-and-found" />
+                </div>
+            </div>
 
-		<A NAME="contact"></A>
+            <div class="row">
+                <div class="six columns project">
+                    <div class="label">
+                        <h1>Millenium Falcon</h1>
+                        <p>A 3D drawing of the Millenium Falcon from Star Wars made in AutoCAD 2017.</p>
+                        <a href="https://github.com/eccentricayman/TD10-Projects/blob/master/Ayman%20Ahmed%20Final%20Project%20P10.dwg" class="button">Download <i class="fa fa-download"></i></a>
+                    </div>
+                    <img src="images/project3.png" id="project3" class="u-max-full-width" alt="millenium-falcon" />
+                </div>
+                
+            </div>
+            
+            <div class="footer-wrapper" id="contact">
 
-		<!-- Footer -->
-		<p style="display: none" id="email">admin@aymanahmed.me</p>
-		<div id="copied" style="text-align: center ; font-family: 'Montserrat', sans-serif ; font-size: 1.75em ; color: #FFFFFF">Copied to clipboard.</div>
+                <div class="row footer">
+                    
+                    <div class="six columns footer-left">
+                        <h1>Contact</h1>
+                        <a class="footer-link" href="https://www.facebook.com/aymantrouble"><i class="fa fa-facebook" style="padding-right: 1.5%"></i>Facebook</a>
+                        <a class="footer-link" href="https://www.instagram.com/eccentricayman/"><i class="fa fa-instagram" style="padding-right: 1.5%"></i>Instagram</a>
+                        <p><i class="fa fa-envelope" style="padding-right: 1.5%"></i>aahmed3@stuy.edu</p>
+                        <p><i class="fa fa-phone" style="padding-right: 1.5%"></i>(646)-289-0275</p>
+                    </div>
+                    
+                    <div class="six columns footer-right">
+                        <h1>Links</h1>
+                        <a class="footer-link" href="https://github.com/eccentricayman">Github<i class="fa fa-github" style="padding-left: 1.5%"></i></a>
+                        <a class="footer-link" href="https://medium.com/@eccentricayman">Medium<i class="fa fa-medium" style="padding-left: 1.5%"></i></a>
+                        <a class="footer-link" href="resume.pdf">Resum&eacute;<i class="fa fa-briefcase" style="padding-left: 1.5%"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="copyright"><p><i class="fa fa-copyright"></i> Ayman Ahmed 2017</p></div>
+                
+            </div>
+            
+            <!-- Scripts -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            
+            <script type="text/javascript">
+             //cover page fade in
+             window.onload = function () {
+                 $("#cover")
+                     .animate({
+                         'opacity': 1,
+                         'padding-bottom': '2.5%'
+                     },{ duration: 500, queue: false });
+                 $(".arrow-down")
+                     .animate({
+                         'opacity': 1,
+                         'bottom': '2.5%'
+                     }, { duration: 250, queue: false });
+             };
+            </script>
+            
+            <script type="text/javascript">
+             //arrow down scrolls
+             $(".arrow-down").click( function() {
+                 $('html, body').animate( {
+                     scrollTop: $("#about").offset().top
+                 }, 1000);
+             });
+            </script>
+            
+            <script type="text/javascript">
+             //make navbar come down
+             function navbarToggle() {
+                 if ($(window).width() >= 750) {
+                     window.onscroll = function(e) {
+                         var cover = $("#home").offset().top + $("#home").outerHeight();
+                         if ($(window).scrollTop() > cover) {
+                             $("#nav").slideDown("fast");
+                         }
+                         else {
+                             $("#nav").slideUp("fast");
+                         }
+                     };
+                 }
+             }
+             navbarToggle();
+             window.addEventListener('resize', navbarToggle);
+            </script>
 
-		<!-- <div class="bottombar seperate" style="margin: 0px ; padding: 0px ; width: 100% ; height: 30vh">
-			<div class="seperate row" style="margin: 0 auto">
-				<span class="col-xs-4">
-					<a class="btn btn-circle btn-xl btn-hover" href="resume.pdf" title="Resume" target="_blank"><i class="fa fa-briefcase" aria-hidden="true" style="font-size: 44px ; line-height: 2 ; padding-right: 3px"></i></a>
-				</span>
-				<span class="col-xs-4">
-					<a class="btn btn-circle btn-xl btn-hover" href="https://github.com/eccentricayman" title="Github" target="_blank"><i class="fa fa-github" style="font-size: 60px ; line-height: 1.45 ; padding-right: 0.5px"></i></a>
-				</span>
-				<span class="col-xs-4">
-					<button type="button" id="email-button" title="Copy Email to Clipboard" class="btn btn-circle btn-xl btn-hover"><i class="fa fa-envelope" style="font-size: 44px ; line-height: 1.9 ; padding-left: 2px" onclick="copyToClipboard('#email') ; displayCopied()"></i></button>
-				</span>
-			</div>
-		</div> -->
-		<div class="bottombar seperate" style="margin: 0 ; padding-top: 2.5% ; padding-bottom: 2.5% ; width: 100%">
-			<div class="seperate row" style="margin: 0 auto">
-				<div class="col-xs-4">
-					<a href="resume.pdf" title="Resume" class="btn btn-circle btn-xl waves-effect waves-light">
-						<i class="fa fa-briefcase" style="font-size: 1.6em"></i>
-					</a>
-				</div>
-				<div class="col-xs-4">
-					<a href="https://github.com/eccentricayman" title="Github" class="btn btn-circle btn-xl waves-effect waves-light">
-						<i class="fa fa-github" style="font-size: 1.7em"></i>
-					</a>
-				</div>
-				<div class="col-xs-4">
-					<button type="button" id="email-button" title="Copy Email to Clipboard" class="btn btn-circle btn-xl waves-effect waves-light">
-						<i class="fa fa-envelope" style="font-size: 1.5em" onclick="copyToClipboard('#email') ; displayCopied()"></i>
-					</button>
-				</div>
-			</div>
-		</div>
-		<!-- Dat ill copyright -->
-		<div class="bottombar" style="margin: 0px ; padding: 0.75% ; width: 100% ; height: auto ; overflow: hidden ; display: block; background: rgb(46,50,60) ; color: white ; font-family: 'Open Sans'">
-			Made with Bootstrap, Materialize, and <i class="fa fa-heart"></i>
-			<br> 
-			<i class="fa fa-copyright" aria-hidden="true"></i> Ayman Ahmed 2017
-		</div>
-
-		<!-- SCRIPTS -->
-		<!-- JQuery -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<!-- Bootstrap core JavaScript -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<!-- Material Design Bootstrap -->
-		<script type="text/javascript" src="js/mdb.js"></script>
-		<script type="text/javascript" src="min/plugin-min.js"></script>
-		<script type="text/javascript" src="min/custom-min.js"></script>
-
-		<!-- hide the notif thing -->
-		<script type="text/javascript">
-			$(document).ready(function() { 
-				$("#copied").hide();
-			});
-		</script>
-		<!-- Smooth scroll, idek why i need the different version of jquery but w/e -->
-		<script type="text/javascript" src="js/animation.js"></script>
-		<script type="text/javascript">
-			var $root = $('html, body');
-				$('a').click(function() {
-				var href = $.attr(this, 'href');
-				$root.animate({
-					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 60
-				}, 750, function () {
-					window.location.hash = href;
-				});
-				return false;
-			});
-		</script>
-		<!-- finds and copies on button?? -->
-		<script type="text/javascript">
-			function copyToClipboard(element) {
-				  var $temp = $("<input>");
-				  $("body").append($temp);
-				  $temp.val($(element).text()).select();
-				  document.execCommand("copy");
-				  $temp.remove();
-			}
-		</script>
-		<!-- displays a notification in center, removes after 3 seconds -->
-		<script type="text/javascript">
-			function displayCopied() {
-				$("#copied").slideDown();
-				setTimeout(function() {
-					$("#copied").slideUp();
-				}, 3000);
-			}
-		</script>
-	</body>
+            <script type="text/javascript">
+             //margin the side skill headings
+             function skillHeadingMargin() {
+                 if ($(window).width() >= 750) {
+                     var boxHeight = $(".two.columns.alpha.skill")[0].offsetHeight / 2;
+                     var headingHeight = $(".skill-section-heading")[0].offsetHeight / 2;
+                     
+                     $(".skill-section-heading").css("margin-top", (boxHeight - headingHeight) + "px");
+                 }
+             }
+             skillHeadingMargin();
+             window.addEventListener('resize', skillHeadingMargin);
+             
+            </script>
+            
+            <script type="text/javascript">
+             //make links smooth scroll
+             var $root = $('html, body');
+             $('a').click(function() {
+                 var href = $.attr(this, 'href');
+                 if (href == "#about") {
+                     $root.animate({
+                         scrollTop: $(href).offset().top
+                     }, 500, function () {
+                         window.location.hash = href;
+                     });
+                 }
+                 else {
+                     $root.animate({
+                         scrollTop: $(href).offset().top - 100
+                     })
+                 }
+                 return false;
+             });
+            </script>
+            
+            <script type="text/javascript">
+             function getPosition(element) {
+                 var xPosition = 0;
+                 var yPosition = 0;
+                 
+                 while (element) {
+                     xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+                     yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+                     element = element.offsetParent;
+                 }
+                 return {
+                     x: xPosition,
+                     y: yPosition
+                 };
+             }
+             
+             function makeLarge() {
+                 var oldImage = jQuery.extend(true, {}, $(this));
+                 var div = this;
+                 var image = this.querySelector("img");
+                 var label = this.querySelector(".label");
+                 var rightSide = getPosition(div).x >= $(window).width() / 2;
+                 
+                 div.style.transition = "all 0.25s";
+                 image.style.transition = "all 0.25s";
+                 
+                 image.style.padding = 0;
+                 image.style.margin = "0 auto";
+                 
+                 div.style.position = "fixed";
+                 
+                 if ( $(window).width() > $(window).height()) {
+                     if (image.naturalWidth > image.naturalHeight) {
+                         image.style.width = "100%";
+                         image.style.height = "auto";
+                     }
+                     else if (image.naturalWidth < image.naturalHeight) {
+                         image.style.width = "auto";
+                         image.style.height = "100%";
+                     }
+                     else {
+                         image.style.width = "auto";
+                         image.style.height = "100%";
+                     }
+                 }
+                 else {
+                     if (image.naturalWidth > image.naturalHeight) {
+                         image.style.width = "100%";
+                         image.style.height = "auto";
+                     }
+                     else if (image.naturalWidth < image.naturalHeight) {
+                         image.style.width = "auto";
+                         image.style.height = "100%";
+                     }
+                     else {
+                         image.style.width = "100%";
+                         image.style.height = "auto";
+                     }
+                 }
+                 
+                 //well over 9000
+                 div.style.zIndex = "9999999";
+                 div.style.padding = 0;
+                 div.style.margin = 0;
+                 div.style.width = "100%";
+                 div.style.height = "100%";
+                 div.style.top = 0;
+                 //math to check left / right side
+                 if (rightSide) {
+                     div.style.right = 0;
+                 }
+                 else {
+                     div.style.left = 0;
+                 }
+                 $("body").addClass("stop-scrolling");
+                 div.style.background = "rgba(0, 0, 0, 0.75)";
+                 
+                 $(label).slideDown();
+                 
+                 this.removeEventListener("click", makeLarge);
+                 this.addEventListener("click", makeSmall);
+             }
+             
+             function makeSmall() {
+                 var div = this;
+                 var image = this.querySelector("img");
+                 var label = this.querySelector(".label");
+                 var rightSide = getPosition(div).x >= $(window).width() / 2;
+                 
+                 $(label).slideUp();
+                 
+                 div.style.transition = "all 0.25s";
+                 image.style.transition = "all 0.25s";
+                 
+                 image.style.padding = 0;
+                 image.style.margin = 0;
+                 image.style.width = "auto";
+                 image.style.height = "auto";
+                 
+                 div.style.zIndex = "1";
+                 if ($(this).hasClass("project-half")) {
+                     div.style.padding = 0;
+                     if ($(window).width() > $(window).height()) {
+                         div.style.width = "49%";
+                     }
+                     else {
+                         div.style.width = "100%";
+                     }
+                 }
+                 else {
+                     div.style.padding = "10px";
+                     if ($(window).width() > $(window).height()) {
+                         div.style.width = "48%";
+                     }
+                     else {
+                         div.style.width = "100%";
+                     }
+                 }
+                 
+                 div.style.position = "static";
+                 
+                 if (this.previousElementSibling === null || $(this).parent().hasClass("double-project") || $(window).height() > $(window).width()) {
+                     div.style.marginLeft = 0;
+                 }
+                 else {
+                     div.style.marginLeft = "4%";
+                 }
+                 if (this.previousElementSibling === null && $(this).parent().hasClass("double-project") && $(window).height() > $(window).width()) {
+                     div.style.marginBottom = "4%";
+                 }
+                 
+                 div.style.height = "initial";
+                 image.style.verticalAlign = "middle";
+                 div.style.alignSelf = "flex-start";
+                 $("body").removeClass("stop-scrolling");
+                 div.style.background = "none";
+                 
+                 this.removeEventListener("click", makeSmall);
+                 this.addEventListener("click", makeLarge);
+             }
+             
+             var projects = document.querySelectorAll('.project');
+             for (i = 0 ; i < projects.length ; i++) {
+                 projects[i].addEventListener("click", makeLarge);
+             }
+            </script>
+            
+    </body>
+    
 </html>

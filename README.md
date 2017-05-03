@@ -1,3 +1,2 @@
-# eccentricayman.github.io
-
-- There are many website like this one, but this one is mine
+# beta
+Beta site, because the old one's bloated.
