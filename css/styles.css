@@ -254,21 +254,28 @@ span {
 
 .footer-left > p, .footer-right > p {
     padding: 0;
-    margin: 0 0 1.5% 0;
+    margin: 0;
     font-size: 1.25em;
 }
 
 .footer-link {
-    color: #777777;
+    color: #404040;
     text-decoration: none;
-    transition: 0.5s color;
+    display: inline;
     margin-bottom: 1.5%;
     font-size: 1.25em;
 }
 
+.footer-link:after, .footer-left > p:after, .footer-right > p:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 1px;
+}
+
 .footer-link:hover {
-    transition: 0.5s color;
-    color: black;
+    color: #404040;
+    font-weight: 500;
 }
 
 .copyright {
@@ -648,4 +655,3 @@ span {
     }
 
 }
-
