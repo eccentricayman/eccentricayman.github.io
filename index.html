@@ -451,6 +451,7 @@
                  div.style.width = "100%";
                  div.style.height = "100%";
                  div.style.top = 0;
+				 div.style.cursor = "default";
                  //math to check left / right side
                  if (rightSide) {
                      div.style.right = 0;
@@ -520,6 +521,7 @@
                  div.style.alignSelf = "flex-start";
                  $("body").removeClass("stop-scrolling");
                  div.style.background = "none";
+				 div.style.cursor = "pointer";
                  
                  this.removeEventListener("click", makeSmall);
                  this.addEventListener("click", makeLarge);
