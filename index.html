@@ -277,262 +277,263 @@
                 </div>
                 
             </div>
-            
-            <div class="footer-wrapper" id="contact">
-
-                <div class="row footer">
-                    
-                    <div class="six columns footer-left">
-                        <h1>Contact</h1>
-                        <a class="footer-link" href="https://www.facebook.com/aymantrouble"><i class="fa fa-facebook" style="padding-right: 1.5%"></i>Facebook</a>
-                        <p><i class="fa fa-envelope" style="padding-right: 1.5%"></i>aahmed3@stuy.edu</p>
-                        <p><i class="fa fa-phone" style="padding-right: 1.5%"></i>(646)-289-0275</p>
-                    </div>
-                    
-                    <div class="six columns footer-right">
-                        <h1>Links</h1>
-                        <a class="footer-link" href="https://github.com/eccentricayman">Github<i class="fa fa-github" style="padding-left: 1.5%"></i></a>
-                        <a class="footer-link" href="https://medium.com/@eccentricayman">Medium<i class="fa fa-medium" style="padding-left: 1.5%"></i></a>
-                        <a class="footer-link" href="resume.pdf">Resum&eacute;<i class="fa fa-briefcase" style="padding-left: 1.5%"></i></a>
-                    </div>
-                    
+		</div>
+        
+        <div class="footer-wrapper" id="contact">
+			
+            <div class="row footer">
+                
+                <div class="six columns footer-left">
+                    <h1>Contact</h1>
+                    <a class="footer-link" href="https://www.facebook.com/aymantrouble"><i class="fa fa-facebook" style="padding-right: 1.5%"></i>Facebook</a>
+                    <p><i class="fa fa-envelope" style="padding-right: 1.5%"></i>aahmed3@stuy.edu</p>
+                    <p><i class="fa fa-phone" style="padding-right: 1.5%"></i>(646)-289-0275</p>
                 </div>
-                <div class="copyright"><p><i class="fa fa-copyright"></i> Ayman Ahmed 2017</p></div>
+                
+                <div class="six columns footer-right">
+                    <h1>Links</h1>
+                    <a class="footer-link" href="https://github.com/eccentricayman">Github<i class="fa fa-github" style="padding-left: 1.5%"></i></a>
+                    <a class="footer-link" href="https://medium.com/@eccentricayman">Medium<i class="fa fa-medium" style="padding-left: 1.5%"></i></a>
+                    <a class="footer-link" href="resume.pdf">Resum&eacute;<i class="fa fa-briefcase" style="padding-left: 1.5%"></i></a>
+                </div>
                 
             </div>
+            <div class="copyright"><p><i class="fa fa-copyright"></i> Ayman Ahmed 2017</p></div>
             
-            <!-- Scripts -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            
-            <script type="text/javascript">
-             //cover page fade in
-             window.onload = function () {
-                 $("#cover")
-                     .animate({
-                         'opacity': 1,
-                         'padding-bottom': '2.5%'
-                     },{ duration: 500, queue: false });
-                 $(".arrow-down")
-                     .animate({
-                         'opacity': 1,
-                         'bottom': '2.5%'
-                     }, { duration: 250, queue: false });
-             };
-            </script>
-            
-            <script type="text/javascript">
-             //arrow down scrolls
-             $(".arrow-down").click( function() {
-                 $('html, body').animate( {
-                     scrollTop: $("#about").offset().top
-                 }, 1000);
-             });
-            </script>
-            
-            <script type="text/javascript">
-             //make navbar come down
-             function navbarToggle() {
-                 if ($(window).width() >= 750) {
-                     window.onscroll = function(e) {
-                         var cover = $("#home").offset().top + $("#home").outerHeight();
-                         if ($(window).scrollTop() > cover) {
-                             $("#nav").slideDown("fast");
-                         }
-                         else {
-                             $("#nav").slideUp("fast");
-                         }
-                     };
-                 }
-             }
-             navbarToggle();
-             window.addEventListener('resize', navbarToggle);
-            </script>
-
-            <script type="text/javascript">
-             //margin the side skill headings
-             function skillHeadingMargin() {
-                 if ($(window).width() >= 750) {
-                     var boxHeight = $(".two.columns.alpha.skill")[0].offsetHeight / 2;
-                     var headingHeight = $(".skill-section-heading")[0].offsetHeight / 2;
-                     
-                     $(".skill-section-heading").css("margin-top", (boxHeight - headingHeight) + "px");
-                 }
-             }
-             skillHeadingMargin();
-             window.addEventListener('resize', skillHeadingMargin);
-             
-            </script>
-            
-            <script type="text/javascript">
-             //make links smooth scroll
-             var $root = $('html, body');
-             $('a').click(function() {
-                 var href = $.attr(this, 'href');
-                 if (href == "#about") {
-                     $root.animate({
-                         scrollTop: $(href).offset().top
-                     }, 500, function () {
-                         window.location.hash = href;
-                     });
-                 }
-                 else {
-                     $root.animate({
-                         scrollTop: $(href).offset().top - 100
-                     })
-                 }
-                 return false;
-             });
-            </script>
-            
-            <script type="text/javascript">
-             function getPosition(element) {
-                 var xPosition = 0;
-                 var yPosition = 0;
-                 
-                 while (element) {
-                     xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
-                     yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-                     element = element.offsetParent;
-                 }
-                 return {
-                     x: xPosition,
-                     y: yPosition
+        </div>
+        
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+         //cover page fade in
+         window.onload = function () {
+             $("#cover")
+                 .animate({
+                     'opacity': 1,
+                     'padding-bottom': '2.5%'
+                 },{ duration: 500, queue: false });
+             $(".arrow-down")
+                 .animate({
+                     'opacity': 1,
+                     'bottom': '2.5%'
+                 }, { duration: 250, queue: false });
+         };
+        </script>
+        
+        <script type="text/javascript">
+         //arrow down scrolls
+         $(".arrow-down").click( function() {
+             $('html, body').animate( {
+                 scrollTop: $("#about").offset().top
+             }, 1000);
+         });
+        </script>
+        
+        <script type="text/javascript">
+         //make navbar come down
+         function navbarToggle() {
+             if ($(window).width() >= 750) {
+                 window.onscroll = function(e) {
+                     var cover = $("#home").offset().top + $("#home").outerHeight();
+                     if ($(window).scrollTop() > cover) {
+                         $("#nav").slideDown("fast");
+                     }
+                     else {
+                         $("#nav").slideUp("fast");
+                     }
                  };
              }
+         }
+         navbarToggle();
+         window.addEventListener('resize', navbarToggle);
+        </script>
+		
+        <script type="text/javascript">
+         //margin the side skill headings
+         function skillHeadingMargin() {
+             if ($(window).width() >= 750) {
+                 var boxHeight = $(".two.columns.alpha.skill")[0].offsetHeight / 2;
+                 var headingHeight = $(".skill-section-heading")[0].offsetHeight / 2;
+                 
+                 $(".skill-section-heading").css("margin-top", (boxHeight - headingHeight) + "px");
+             }
+         }
+         skillHeadingMargin();
+         window.addEventListener('resize', skillHeadingMargin);
+         
+        </script>
+        
+        <script type="text/javascript">
+         //make links smooth scroll
+         var $root = $('html, body');
+         $('a').click(function() {
+             var href = $.attr(this, 'href');
+             if (href == "#about") {
+                 $root.animate({
+                     scrollTop: $(href).offset().top
+                 }, 500, function () {
+                     window.location.hash = href;
+                 });
+             }
+             else {
+                 $root.animate({
+                     scrollTop: $(href).offset().top - 100
+                 })
+             }
+             return false;
+         });
+        </script>
+        
+        <script type="text/javascript">
+         function getPosition(element) {
+             var xPosition = 0;
+             var yPosition = 0;
              
-             function makeLarge() {
-                 var oldImage = jQuery.extend(true, {}, $(this));
-                 var div = this;
-                 var image = this.querySelector("img");
-                 var label = this.querySelector(".label");
-                 var rightSide = getPosition(div).x >= $(window).width() / 2;
-                 
-                 div.style.transition = "all 0.25s";
-                 image.style.transition = "all 0.25s";
-                 
-                 image.style.padding = 0;
-                 image.style.margin = "0 auto";
-                 
-                 div.style.position = "fixed";
-                 
-                 if ( $(window).width() > $(window).height()) {
-                     if (image.naturalWidth > image.naturalHeight) {
-                         image.style.width = "100%";
-                         image.style.height = "auto";
-                     }
-                     else if (image.naturalWidth < image.naturalHeight) {
-                         image.style.width = "auto";
-                         image.style.height = "100%";
-                     }
-                     else {
-                         image.style.width = "auto";
-                         image.style.height = "100%";
-                     }
+             while (element) {
+                 xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+                 yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+                 element = element.offsetParent;
+             }
+             return {
+                 x: xPosition,
+                 y: yPosition
+             };
+         }
+         
+         function makeLarge() {
+             var oldImage = jQuery.extend(true, {}, $(this));
+             var div = this;
+             var image = this.querySelector("img");
+             var label = this.querySelector(".label");
+             var rightSide = getPosition(div).x >= $(window).width() / 2;
+             
+             div.style.transition = "all 0.25s";
+             image.style.transition = "all 0.25s";
+             
+             image.style.padding = 0;
+             image.style.margin = "0 auto";
+             
+             div.style.position = "fixed";
+             
+             if ( $(window).width() > $(window).height()) {
+                 if (image.naturalWidth > image.naturalHeight) {
+                     image.style.width = "100%";
+                     image.style.height = "auto";
+                 }
+                 else if (image.naturalWidth < image.naturalHeight) {
+                     image.style.width = "auto";
+                     image.style.height = "100%";
                  }
                  else {
-                     if (image.naturalWidth > image.naturalHeight) {
-                         image.style.width = "100%";
-                         image.style.height = "auto";
-                     }
-                     else if (image.naturalWidth < image.naturalHeight) {
-                         image.style.width = "auto";
-                         image.style.height = "100%";
-                     }
-                     else {
-                         image.style.width = "100%";
-                         image.style.height = "auto";
-                     }
+                     image.style.width = "auto";
+                     image.style.height = "100%";
                  }
-                 
-                 //well over 9000
-                 div.style.zIndex = "9999999";
-                 div.style.padding = 0;
-                 div.style.margin = 0;
-                 div.style.width = "100%";
-                 div.style.height = "100%";
-                 div.style.top = 0;
-				 div.style.cursor = "default";
-                 //math to check left / right side
-                 if (rightSide) {
-                     div.style.right = 0;
+             }
+             else {
+                 if (image.naturalWidth > image.naturalHeight) {
+                     image.style.width = "100%";
+                     image.style.height = "auto";
+                 }
+                 else if (image.naturalWidth < image.naturalHeight) {
+                     image.style.width = "auto";
+                     image.style.height = "100%";
                  }
                  else {
-                     div.style.left = 0;
+                     image.style.width = "100%";
+                     image.style.height = "auto";
                  }
-                 $("body").addClass("stop-scrolling");
-                 div.style.background = "rgba(0, 0, 0, 0.75)";
-                 
-                 $(label).slideDown();
-                 
-                 this.removeEventListener("click", makeLarge);
-                 this.addEventListener("click", makeSmall);
              }
              
-             function makeSmall() {
-                 var div = this;
-                 var image = this.querySelector("img");
-                 var label = this.querySelector(".label");
-                 var rightSide = getPosition(div).x >= $(window).width() / 2;
-                 
-                 $(label).slideUp();
-                 
-                 div.style.transition = "all 0.25s";
-                 image.style.transition = "all 0.25s";
-                 
-                 image.style.padding = 0;
-                 image.style.margin = 0;
-                 image.style.width = "auto";
-                 image.style.height = "auto";
-                 
-                 div.style.zIndex = "1";
-                 if ($(this).hasClass("project-half")) {
-                     div.style.padding = 0;
-                     if ($(window).width() > $(window).height()) {
-                         div.style.width = "49%";
-                     }
-                     else {
-                         div.style.width = "100%";
-                     }
+             //well over 9000
+             div.style.zIndex = "9999999";
+             div.style.padding = 0;
+             div.style.margin = 0;
+             div.style.width = "100%";
+             div.style.height = "100%";
+             div.style.top = 0;
+			 div.style.cursor = "default";
+             //math to check left / right side
+             if (rightSide) {
+                 div.style.right = 0;
+             }
+             else {
+                 div.style.left = 0;
+             }
+             $("body").addClass("stop-scrolling");
+             div.style.background = "rgba(0, 0, 0, 0.75)";
+             
+             $(label).slideDown();
+             
+             this.removeEventListener("click", makeLarge);
+             this.addEventListener("click", makeSmall);
+         }
+         
+         function makeSmall() {
+             var div = this;
+             var image = this.querySelector("img");
+             var label = this.querySelector(".label");
+             var rightSide = getPosition(div).x >= $(window).width() / 2;
+             
+             $(label).slideUp();
+             
+             div.style.transition = "all 0.25s";
+             image.style.transition = "all 0.25s";
+             
+             image.style.padding = 0;
+             image.style.margin = 0;
+             image.style.width = "auto";
+             image.style.height = "auto";
+             
+             div.style.zIndex = "1";
+             if ($(this).hasClass("project-half")) {
+                 div.style.padding = 0;
+                 if ($(window).width() > $(window).height()) {
+                     div.style.width = "49%";
                  }
                  else {
-                     div.style.padding = "10px";
-                     if ($(window).width() > $(window).height()) {
-                         div.style.width = "48%";
-                     }
-                     else {
-                         div.style.width = "100%";
-                     }
+                     div.style.width = "100%";
                  }
-                 
-                 div.style.position = "static";
-                 
-                 if (this.previousElementSibling === null || $(this).parent().hasClass("double-project") || $(window).height() > $(window).width()) {
+             }
+             else {
+                 div.style.padding = "10px";
+                 if ($(window).width() > $(window).height()) {
+                     div.style.width = "48%";
+                 }
+                 else {
+                     div.style.width = "100%";
+                 }
+             }
+             
+             div.style.position = "static";
+             
+             if (this.previousElementSibling === null || $(this).parent().hasClass("double-project") || $(window).height() > $(window).width()) {
                      div.style.marginLeft = 0;
                  }
-                 else {
-                     div.style.marginLeft = "4%";
-                 }
-                 if (this.previousElementSibling === null && $(this).parent().hasClass("double-project") && $(window).height() > $(window).width()) {
-                     div.style.marginBottom = "4%";
-                 }
-                 
-                 div.style.height = "initial";
-                 image.style.verticalAlign = "middle";
-                 div.style.alignSelf = "flex-start";
-                 $("body").removeClass("stop-scrolling");
-                 div.style.background = "none";
-				 div.style.cursor = "pointer";
-                 
-                 this.removeEventListener("click", makeSmall);
-                 this.addEventListener("click", makeLarge);
+             else {
+                 div.style.marginLeft = "4%";
+             }
+             if (this.previousElementSibling === null && $(this).parent().hasClass("double-project") && $(window).height() > $(window).width()) {
+                 div.style.marginBottom = "4%";
              }
              
-             var projects = document.querySelectorAll('.project');
-             for (i = 0 ; i < projects.length ; i++) {
-                 projects[i].addEventListener("click", makeLarge);
-             }
-            </script>
-            
+             div.style.height = "initial";
+             image.style.verticalAlign = "middle";
+             div.style.alignSelf = "flex-start";
+             $("body").removeClass("stop-scrolling");
+             div.style.background = "none";
+			 div.style.cursor = "pointer";
+             
+             this.removeEventListener("click", makeSmall);
+             this.addEventListener("click", makeLarge);
+         }
+         
+         var projects = document.querySelectorAll('.project');
+         for (i = 0 ; i < projects.length ; i++) {
+             projects[i].addEventListener("click", makeLarge);
+         }
+        </script>
+        
     </body>
     
 </html>
