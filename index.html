@@ -105,13 +105,15 @@
                     <span>{</span>
                     <br>
                     <span class="string">&emsp;&emsp;'School'</span><span>: </span>
-                    <span class="string">'Stuyvesant High School'</span><span>,</span>
+                    <span class="string">'St. John's University'</span><span>,</span>
                     <br>
-                    <span class="string">&emsp;&emsp;'Focus'</span><span>: </span>
-                    <span class="string">'Computer Science'</span><span>,</span>
+                    <span class="string">&emsp;&emsp;'Majors'</span><span>: [</span>
+                    <span class="string">'Computer Science'</span><span>,&nbsp;</span><span class="string">'Cybersecurity'</span><span>&nbsp;],</span>
                     <br>
-                    <span class="string">&emsp;&emsp;'Graduation'</span><span>: </span>
-                    <span class="string">'June 2017'</span>
+                    <span class="string">&emsp;&emsp;'Year'</span><span>: </span>
+                    <span class="string">'Freshman'</span><span>,</span>
+					<br>
+					<span class="string">&emsp;&emsp;'Prior'</span><span>:&nbsp;</span><span class="string">'Stuyvesant High School'</span>
                     <br>
                     <span>}</span>
 
@@ -124,10 +126,10 @@
                     <span>[</span>
                     <span class="string">'coding'</span><span>, </span>
                     <span class="string">'computer hardware'</span><span>, </span>
-                    <span class="string">'gaming'</span><span>, </span>
-                    <span class="string">'glowstringing'</span><span>, </span>
+                    <span class="string">'video games'</span><span>, </span>
                     <span class="string">'swimming'</span><span>, </span>
-                    <span class="string">'reading'</span>
+                    <span class="string">'books'</span><span>, </span>
+                    <span class="string">'<a style="color: #88AE88" href="https://en.wikipedia.org/wiki/Poi_(performance_art)">poi</a>'</span>
                     <span>]</span>
                     
                     <br>
@@ -177,7 +179,7 @@
                         <div class="one column">&nbsp;</div>
                         <div class="two columns alpha skill">
                             <h3>Git</h3>
-                        <img src="images/git.png" alt="git-logo" />
+							<img src="images/git.png" alt="git-logo" />
                         </div>
                         <div class="two columns skill">
                             <h3>Terminal (Zsh)</h3>
@@ -522,8 +524,8 @@
              div.style.position = "static";
              
              if (this.previousElementSibling === null || $(this).parent().hasClass("double-project") || $(window).height() > $(window).width()) {
-                     div.style.marginLeft = 0;
-                 }
+                 div.style.marginLeft = 0;
+             }
              else {
                  div.style.marginLeft = "4%";
              }
