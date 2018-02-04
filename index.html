@@ -320,7 +320,6 @@
                  $(".skill-section-heading").css("margin-top", (boxHeight - headingHeight) + "px");
              }
          }
-         window.addEventListener('resize', skillHeadingMargin);
 		 
          //cover page fade in
          window.onload = function () {
@@ -337,6 +336,7 @@
          };
 		 //so it doesnt mess up measurements
 		 skillHeadingMargin();
+		 window.addEventListener('resize', skillHeadingMargin);
         </script>
         
         <script type="text/javascript">
